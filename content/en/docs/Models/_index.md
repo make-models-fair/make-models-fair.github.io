@@ -7,4 +7,6 @@ description: >
   What models are part of the initiative?
 ---
 
-Table of model domains, and why we chose which domains/models/publications that we did. Links to domains.
+Rationale for model/publication selection. Invitation for other model suggestions (or domains).
+
+Instructions & orienting to models. 4 domains, can check status, go to repo, etc.

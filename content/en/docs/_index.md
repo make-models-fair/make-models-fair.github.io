@@ -8,15 +8,18 @@ menu:
     weight: 20
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+## What is it?
+The goal of this initiative is to provide capacity-building opportunities to improve the skill, practices, and protocols to make computational models findable, accessible, interoperable, and reusable (FAIR). We have selected a list of highly cited papers in different domains and developed a protocol for making those models FAIR. Our aim is to make over 100 models FAIR, with the help of the modeling community. We will stimulate activities to advance model analysis of those FAIR models using high throughput computing.
+
+This initiative is in partnership with the Network for Computational Modeling in Social and Ecological Sciences ([CoMSES Net](https://comses.net)) and [OTHER PARTNERS?]
+
+## Why should I get involved?
+The Making Models FAIR initiative may provide many opportunities for networking, paper publications, and training and learning. Community members may wish to collaborate on making a selection of highly-cited models FAIR in order to publish their work and share more widely with the scientific community. Or, they may seek to replicate findings or perform additional parameter sweeps and sensitivity tests for better understanding of some of the most classic models that are frequently re-used and referenced.
+
+This initiative seeks to offer a straightforward way to engage with modeling communities such as CoMSES, while allowing room for the community itself to build and grow the initiative in ways that most suit their needs. For instance, additional models may be added to the initial list of publications / models, or new experiments with high throughput computing could be performed on newly FAIR models, etc.
+
+To learn more, please visit the [Getting Involved](/docs/getting-involved/) page, and feel free to contact us at fair@comses.net to share any additional ideas or interest.
 
 
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project.
-
-For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which lives in the [Docsy theme repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to copy its docs section.
-
-Other content such as marketing material, case studies, and community updates should live in the [About](/about/) and [Community](/community/) pages.
-
-Find out how to use the Docsy theme in the [Docsy User Guide](https://docsy.dev/docs/). You can learn more about how to organize your documentation (and how we organized this site) in [Organizing Your Content](https://docsy.dev/docs/best-practices/organizing-content/).
+## Navigating the site
+This website's documentation pages provide information on the [process](/docs/process/) involved in making a model FAIR, the currently-selected papers and their associated [models](/docs/models/), and the steps for [getting involved](/docs/getting-involved/) with this initiative. A more active [Community](/community/) page will be up and running by early 2023.
