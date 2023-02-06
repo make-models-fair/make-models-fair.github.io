@@ -1,0 +1,41 @@
+{{ $src := .Get "src" }}
+{{ $delimiter := .Get "delimiter" | default "," }}
+{{ $csv := getCSV $delimiter $src }}
+{{ $domain := .Get "domain" }}
+
+
+<table>
+  <thead>
+    <tr>
+        <th style="width:50%;" rowspan=2>Model Citation</th>
+        <th style="text-align:center;" rowspan=2>Status</th>
+        <th style="text-align:center;" rowspan=2>GitHub Link</th>
+        <th style="text-align:center;" colspan=5>FAIR Criterion Assessment</th>
+
+    </tr>
+    <tr>
+        <th style="font-size:80%;text-align:center;">Code Available?</th>
+        <th style="font-size:80%;text-align:center;">License?</th>
+        <th style="font-size:80%;text-align:center;">DOI?</th>
+        <th style="font-size:80%;text-align:center;">Document-ation?</th>
+        <th style="font-size:80%;text-align:center;">Clean Code?</th>
+    </tr>
+</thead>
+
+  <tbody>
+  {{ range $i, $csv := after 1 $csv }}
+  {{if in (index . 1) $domain }}
+    <tr>
+      <td style="width:50%;">{{ index $csv 0 }}</td>
+      <td style="text-align:center;">{{ index $csv 7 }}</td>
+      <td style="text-align:center;">{{ index $csv 8 }}</td>
+      <td style="text-align:center;">{{ index $csv 2 }}</td>
+      <td style="text-align:center;">{{ index $csv 3 }}</td>
+      <td style="text-align:center;">{{ index $csv 4 }}</td>
+      <td style="text-align:center;">{{ index $csv 5 }}</td>
+      <td style="text-align:center;">{{ index $csv 6 }}</td>
+    </tr>
+  {{ end }}
+  {{ end }}
+  </tbody>
+</table>

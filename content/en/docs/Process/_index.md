@@ -4,7 +4,7 @@ linkTitle: "Process"
 weight: 2
 ---
 
-Here, you will find guidance on how this initiative seeks to make models more FAIR. This effort will contribute a public good to the modeling community, increasing transparency and building trust in many of the highly cited models that are frequently used (and built upon) in new research. While the initiative is primarily focused on the first two steps outlined below, it will open the door for replication and robustness checks and other associated opportunities.
+Here, you will find guidance on how this initiative seeks to make models more FAIR. This effort will contribute a public good to the modeling community, increasing transparency and building trust in many of the highly cited models that are frequently used (and built upon) in new research. While __the initiative is primarily focused on the first two steps outlined below__, it will open the door for replication and robustness checks and other associated opportunities.
 
 Each publication (and associated model) originally selected for this initiative has been assessed based on the five FAIR criteria: (1) Publicly accessible code, (2) License for the code, (3) DOI for the code, (4) Good documentation, and (5) Clean code.
 
