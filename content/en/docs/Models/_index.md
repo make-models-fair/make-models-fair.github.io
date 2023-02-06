@@ -14,7 +14,7 @@ Each of the subpages is associated with one of the [four categories](/docs/model
 * Current status in this initiative. Options include:
   * Not yet started
   * Looking for collaborators
-  * In process
+  * In progress
   * Meets FAIR criteria!
 <br>
 <br>
