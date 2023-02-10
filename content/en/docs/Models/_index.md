@@ -7,9 +7,11 @@ date: 2022-11-06
 
 Our goal is to provide training opportunities of practical use of FAIR principles. We have selected and done the preliminary assessment of the FAIR criteria for a list of model publications that might resonate with different groups within the community. The list of initial models is a starting point, and we would like for other members of the community to suggest additional model publications. See below for more details on [how this preliminary list of model publications was selected](/docs/models/#how), and [how to suggest a new model](/docs/models/#new).
 
+If you do not have access to the publication you would like to work on, please send a request for access to fair@comses.net.
+
 ### Selecting a model and getting started
 
-Each of the subpages is associated with one of the [four categories](/docs/models/#categories) of model publications preliminary selected for this initiative. The subpage contains a table with each row corresponding to a model publication. The table lists:
+Each of the subpages is associated with one of the [four categories](/docs/models/#categories) of model publications preliminarily selected for this initiative. The subpage contains a table with each row corresponding to a model publication. The table lists:
 
 * Current status in this initiative. Options include:
   * Not yet started
@@ -43,6 +45,6 @@ We used the keywords "agent based model", "individual based model", "computer si
 
 We have a fifth "Open" category for which community members can submit model publications outside the four above categories. Since our focus is on model publications that have had some traction, we use an arbitrary threshold of >100 citations in Scopus to be considered for inclusion.
 
-Additionally, we welcome groups to suggesr their own list of 20-25 model publications on a different topic. This might be an opportunity to stimulate FAIR practices in your domain area.
+Additionally, we welcome groups to suggest their own list of 20-25 model publications on a different topic. This might be an opportunity to stimulate FAIR practices in your domain area.
 
 If you have recommendations, please send the reference to fair@comses.net!

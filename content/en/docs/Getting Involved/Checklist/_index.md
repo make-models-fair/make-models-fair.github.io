@@ -20,7 +20,7 @@ weight: 1
 <hr>
 
 #### __3. For any model you are interested in, create or contribute to an associated issue in the [coordination repository](https://github.com/make-models-fair/coordination/issues)__ {#three}
-  * If there is already an existing issue for the model you're interested in, there should be a link in the "GitHub Link" column of the table of models. This issue is where you will track and document progress and collaborate with others.
+  * If there is already an existing issue for the model you're interested in, there should be a link in the "GitHub Link" column of the table. This issue is where you will track and document progress and collaborate with others.
   <br>
   <br>
   * If the model has not yet had any contributors, create a new issue in the [coordination repository](https://github.com/make-models-fair/coordination/issues).
@@ -33,7 +33,7 @@ weight: 1
     * Update the template with the appropriate issue name where it says [NAME-YEAR] and the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE]
     {{< imgproc update_template_screenshot Resize "800x" >}} {{< /imgproc >}}
 
-    * Name the issue based on the publication citation associated with the model using the following guidelines:
+    * Name the issue based on the model publication citation using the following guidelines:
       - _One author:_ name-year
         - Example: zhang-2004
       - _Two authors:_ name1-name2-year
@@ -51,7 +51,7 @@ weight: 1
   <br>
   <br>
   * Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the "In progress" or "Collaborators needed" labels for the issue.
-    * If you have just created an issue, the "In progress" label will automatically be associated with the issue. This is a very important step, as the label "In progress" will trigger an automated email to fair@comses.net asking for a new model repository to be created for this model using the same publication-based naming convention as above (e.g., name-year).
+    * If you have just created an issue, the "In progress" label will automatically be associated with the issue. This is a very important step, as the label "In progress" will trigger an automated email to fair@comses.net asking for a new model repository to be created for this model.
   * Add the green label associated with the category of the model.
 
 <br>
