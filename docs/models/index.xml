@@ -1,0 +1,1017 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Making Models FAIR – Models</title><link>/docs/models/</link><description>Recent content in Models on Making Models FAIR</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 06 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/docs/models/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Ecological Processes</title><link>/docs/models/ecological-processes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/models/ecological-processes/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width:50%;" rowspan=2>Model Citation&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>Status&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>GitHub Link&lt;/th>
+&lt;th style="text-align:center;" colspan=5>FAIR Criterion Assessment&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th style="font-size:80%;text-align:center;">Code Available?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">License?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">DOI?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Document-ation?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Clean Code?&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="width:50%;">Dieckmann, U., &amp;amp; Doebeli, M. (1999). On the origin of species by sympatric speciation, Nature, 400(6742), 354-357.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Tilman, D. (2004). Niche tradeoffs, neutrality, and community structure: A stochastic theory of resource competition, invasion, and community assembly. Proceedings of the National Academy of Sciences of the United States of America, 101(30), 10854-10861.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Cowen, R.K., Lwiza, K.M.M., Sponaugle, S., Paris, C.B., &amp;amp; Olson, D.B. (2000). Connectivity of marine populations: Open or closed? Science, 287(5454), 857-859.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Soares-Filho, B.S., Nepstad, D.C., Curran, L.M., Cerqueira, G.C., Garcia, R.A., Ramos, C.A., Voll, E., McDonald, A., Lefebvre, P., &amp;amp; Schlesinger, P. (2006). Modelling conservation in the Amazon basin. Nature, 440(7083), 520-523.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Coyte, K.Z., Schluter, J., &amp;amp; Foster, K.R. (2015). The ecology of the microbiome: Networks, competition, and stability. Science, 350(6261), 663-666.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Bascompte, J., Jordano, P., &amp;amp; Olesen, J.M. (2006). Asymmetric coevolutionary networks facilitate biodiversity maintenance. Science, 312(5772), 431-433.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">A&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Bever, J.D., Westover, K.M., &amp;amp; Antonovics, J. (1997). Incorporating the soil community into plant population dynamics: The utility of the feedback approach. Journal of Ecology, 85(5), 561-573.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Higgins, S.I., Bond, W.J., &amp;amp; Trollope, W.S.W. (2000). Fire, resprouting and variability: A recipe for grass-tree coexistence in savanna. Journal of Ecology, 88(2), 213-229.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Smith, B., Prentice, I.C., &amp;amp; Sykes, M.T. (2001). Representation of vegetation dynamics in the modelling of terrestrial ecosystems: Comparing two contrasting approaches within European climate space. Global Ecology and Biogeography, 10(6), 621-637.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">E&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Keeling, M.J. (1999). The effects of local spatial structure on epidemiological invasions. Proceedings of the Royal Society B: Biological Sciences, 266(1421), 859-867.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Moorcroft, P.R., Hurtt, G.C., &amp;amp; Pacala, S.W. (2001). A method for scaling vegetation dynamics: The ecosystem demography model (ED). Ecological Monographs, 71(4), 557-586.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">Y&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">Y&lt;/td>
+&lt;td style="text-align:center;">A&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Enquist, B.J., &amp;amp; Niklas, K.J. (2001). Invariant scaling relations across tree-dominated communities. Nature, 410(6829), 655-660.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Hallet, T.B., Coulson, T., Pilkington, J.G., Clulton-Brock, T.H., Pemberion, J.M., &amp;amp; Grenfell, B.T. (2004). Why large-scale climate indices seem to predict ecological processes better than local weather. Nature, 430(6995), 71-75.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Goudet, J., Perrin, N., &amp;amp; Waser, P. (2002). Tests for sex-biased dispersal using bi-parentally inherited genetic markers. Molecular Ecology, 11(6), 1103-1114.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Brose, U., Williams, R.J., &amp;amp; Martinez, N.D. (2006). Allometric scaling enhances stability in complex food webs. Ecology Letters, 9(11), 1228-1236.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Chave, J., Muller-Landau, H. C., &amp;amp; Levin, S. A. (2002). Comparing classical community models: theoretical consequences for patterns of diversity. The American Naturalist, 159(1), 1-23.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Alroy, J. (2001). A multispecies overkill simulation of the end-Pleistocene megafaunal mass extinction. Science, 292(5523), 1893-1896.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">E&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Smith, T., &amp;amp; Huston, M. (1989). A theory of the spatial and temporal dynamics of plant communities. Vegetatio, 83(1-2), 49-69.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Zollner, P.A., &amp;amp; Lima, S.L. (1999). Search strategies for landscape-level interpatch movements. Ecology, 80(3), 1019-1030.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Olden, J.D., &amp;amp; Poff, N.L. (2003). Toward a Mechanistic Understanding and Prediction of Biotic Homogenization. American Naturalist, 162(4), 442-460.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Gustafson, E.J., &amp;amp; Gardner, R.H. (1996). The effect of landscape heterogeneity on the probability of patch colonization. Ecology, 77(1), 94-107.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Balagaddé, F.K., Song, H., Ozaki, J., Collins, C.H., Barnet, M., Arnold, F.H., Quake, S.R., &amp;amp; You, L. (2008). A synthetic Escherichia coli predator-prey ecosystem. Molecular Systems Biology, 4, art. no. 187.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">Y&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">E&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Morin, X., &amp;amp; Thuiller, W. (2009). Comparing niche- and process-based models to reduce prediction uncertainty in species range shifts under climate change. Ecology, 90(5), 1301-1313.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Land Use</title><link>/docs/models/land-use/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/models/land-use/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width:50%;" rowspan=2>Model Citation&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>Status&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>GitHub Link&lt;/th>
+&lt;th style="text-align:center;" colspan=5>FAIR Criterion Assessment&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th style="font-size:80%;text-align:center;">Code Available?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">License?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">DOI?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Document-ation?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Clean Code?&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="width:50%;">Batty, M., Xie, Y., &amp;amp; Sun, Z. (1999). Modeling urban dynamics through GIS-based cellular automata. Computers, Environment and Urban Systems, 23(3), 205-233.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Arsanjani, J.J., Helbich, M., Kainz, W., &amp;amp; Boloorani, A.D. (2013). Integration of logistic regression, Markov chain and cellular automata models to simulate urban expansion. International Journal of Applied Earth Observation and Geoinformation, 21(1), 265-275.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">White, R., &amp;amp; Engelen, G. (2000). High-resolution integrated modelling of the spatial dynamics of urban and regional systems. Computers, Environment and Urban Systems, 24(5), 383-400.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Barredo, J.I., Kasanko, M., McCormick, N., &amp;amp; Lavalle, C. (2003). Modelling dynamic spatial processes: Simulation of urban future scenarios through cellular automata. Landscape and Urban Planning, 64(3), 145-160.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Sang, L., Zhang, C., Yang, J., Zhu, D., &amp;amp; Yun, W. (2011). Simulation of land use spatial pattern of towns and villages based on CA-Markov model. Mathematical and Computer Modelling, 54(3-4), 938-943.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Kamusoko, C., Aniya, M., Adi, B., &amp;amp; Manjoro, M. (2009). Rural sustainability under threat in Zimbabwe - Simulation of future land use/cover changes in the Bindura district based on the Markov-cellular automata model. Applied Geography, 29(3), 435-447.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Van Asselen, S., &amp;amp; Verburg, P.H. (2013). Land cover change or land-use intensification: Simulating land system change with a global-scale land change model. Global Change Biology, 19(12), 3648-3667.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Castella, J.-C., Trung, T.N., &amp;amp; Boissau, S. (2005). Participatory simulation of land-use changes in the northern mountains of Vietnam: The combined use of an agent-based model, a role-playing game, and a geographic information system. Ecology and Society, 10(1), art. no. 27, 32.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Schreinemachers, P., &amp;amp; Berger, T. (2011). An agent-based simulation model of human-environment interactions in agricultural systems. Environmental Modelling and Software, 26(7), 845-859.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">A&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Almeida, C.M., Gleriani, J.M., Castejon, E.F., &amp;amp; Soares-Filho, B.S. (2008). Using neural networks and cellular automata for modelling intra-urban land-use dynamics. International Journal of Geographical Information Science, 22(9), 943-963.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Evans, T.P., &amp;amp; Kelley, H. (2004). Multi-scale analysis of a household level agent-based model of landcover change. Journal of Environmental Management, 72(1-2), 57-72.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Yang, Q., Li, X., &amp;amp; Shi, X. (2008). Cellular automata for simulating land use changes based on support vector machines. Computers and Geosciences, 34(6), 592-602.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Ward, D.P., Murray, A.T., &amp;amp; Phinn, S.R. (2000). A stochastically constrained cellular model of urban growth. Computers, Environment and Urban Systems, 24(6), 539-558.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Almeida, C.M., Batty, M., Monteiro, A.M.V., Câmara, G., Soares-Filho, B.S., Cerqueira, G.C., &amp;amp; Pennachin, C.L. (2003). Stochastic cellular automata modeling of urban land use dynamics: Empirical development and estimation. Computers, Environment and Urban Systems, 27(5), 481-509.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Ligtenberg, A., Bregt, A.K., &amp;amp; Van Lammeren, R. (2001). Multi-actor-based land use modelling: Spatial planning using agents. Landscape and Urban Planning, 56(1-2), 21-33.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Manson, S.M. (2005). Agent-based modeling and genetic programming for modeling land change in the Southern Yucatán Peninsular Region of Mexico. Agriculture, Ecosystems and Environment, 111(1-4), 47-62.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">A&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Fang, S., Gertner, G.Z., Sun, Z., &amp;amp; Anderson, A.A. (2005). The impact of interactions in spatial simulation of the dynamics of urban sprawl. Landscape and Urban Planning, 73(4), 294-306.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Parker, D.C., &amp;amp; Meretsky, V. (2004). Measuring pattern outcomes in an agent-based model of edge-effect externalities using spatial metrics. Agriculture, Ecosystems and Environment, 101(2-3), 233-250.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Deadman, P., Robinson, D., Moran, E., &amp;amp; Brondizio, E. (2004). Colonist household decisionmaking and land-use change in the Amazon Rainforest: An agent-based simulation. Environment and Planning B: Planning and Design, 31(5), 693-709.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Castella, J.-C., &amp;amp; Verburg, P.H. (2007). Combination of process-oriented and pattern-oriented models of land-use change in a mountain area of Vietnam. Ecological Modelling, 202(3-4), 410-420.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">E&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Wijesekara, G.N., Gupta, A., Valeo, C., Hasbani, J.-G., Qiao, Y., Delaney, P., &amp;amp; Marceau, D.J. (2012). Assessing the impact of future land-use changes on hydrological processes in the Elbow River watershed in southern Alberta, Canada. Journal of Hydrology, 412-413, 220-232.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Ligtenberg, A., Wachowicz, M., Bregt, A.K., Beulens, A., &amp;amp; Kettenis, D.L. (2004). A design and application of a multi-agent system for simulation of multi-actor spatial planning. Journal of Environmental Management, 72(1-2), 43-55.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Cooperation</title><link>/docs/models/cooperation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/models/cooperation/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width:50%;" rowspan=2>Model Citation&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>Status&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>GitHub Link&lt;/th>
+&lt;th style="text-align:center;" colspan=5>FAIR Criterion Assessment&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th style="font-size:80%;text-align:center;">Code Available?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">License?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">DOI?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Document-ation?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Clean Code?&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="width:50%;">Nowak, M.A., &amp;amp; Sigmund, K. (1998). Evolution of indirect reciprocity by image scoring. Nature, 393(6685), 573-577.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Axelrod, R. (1986). An evolutionary approach to norms. American Political Science Review, 80(4), 1095-1111.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Santos, F.C., &amp;amp; Pacheco, J.M. (2005). Scale-free networks provide a unifying framework for the emergence of cooperation. Physical Review Letters, 95(9), art. no. 098104.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Nowak, M., &amp;amp; Sigmund, K. (1993). A strategy of win-stay, lose-shift that outperforms tit-for-tat in the Prisoner&amp;#39;s Dilemma game. Nature, 364(6432), 56-58.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Guimerà, R., Uzzi, B., Spiro, J., &amp;amp; Nunes Amaral, L.A. (2005). Team assembly mechanisms determine collaboration network structure and team performance. Science, 308(5722), 697-702.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Choi, J.-K., &amp;amp; Bowles, S. (2007). The coevolution of parochial altruism and war. Science, 318(5850), 636-640.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Hauert, C., Traulsen, A., Brandt, H., Nowak, M.A., &amp;amp; Sigmund, K. (2007). Via freedom to coercion: The emergence of costly punishment. Science, 316(5833), 1905-1907.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Riolo, R.L., Cohen, M.D., &amp;amp; Axelrod, R. (2001). Evolution of cooperation without reciprocity. Nature, 414(6862), 441-443.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Abramson, G., &amp;amp; Kuperman, M. (2001).  Social games in a social network Physical Review E - Statistical Physics, Plasmas, Fluids, and Related Interdisciplinary Topics, 63(3), 4.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Zimmermann, M.G., Eguíluz, V.M., &amp;amp; Miguel, M.S. (2004). Coevolution of dynamical states and interactions in dynamic networks. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 69(6 2), art. no. 065102, 065102-1-065102-4.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Leimar, O., &amp;amp; Hammerstein, P. (2001). Evolution of cooperation through indirect reciprocity. Proceedings of the Royal Society B: Biological Sciences, 268(1468), 745-753.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Santos, F.C., Pacheco, J.M., &amp;amp; Lenaerts, T.  (2006). Cooperation prevails when individuals adjust their social ties. PLoS Computational Biology, 2(10), 1284-1291.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Helbing, D., &amp;amp; Yu, W. (2009). The outbreak of cooperation among success-driven individuals under noisy conditions. Proceedings of the National Academy of Sciences of the United States of America, 106(10), 3680-3685.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Macy, M.W., &amp;amp; Flache, A. (2002). Learning dynamics in social dilemmas. Proceedings of the National Academy of Sciences of the United States of America, 99(SUPPL. 3), 7229-7236.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Traulsen, A., Claussen, J.C., &amp;amp; Hauert, C. (2005). Coevolutionary dynamics: From finite to infinite populations. Physical Review Letters, 95(23), art. no. 238701.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Xavier, J.B., &amp;amp; Foster, K.R. (2007). Cooperation and conflict in microbial biofilms. Proceedings of the National Academy of Sciences of the United States of America, 104(3), 876-881.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Szabó, G., &amp;amp; Hauert, C. (2002). Phase transitions and volunteering in spatial public goods games. Physical Review Letters, 89(11), art. no. 118101, 118101/1-118101/4.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Perc, M., &amp;amp; Wang, Z. (2010). Heterogeneous aspirations promote cooperation in the prisoner&amp;#39;s dilemma game. PLoS ONE, 5(12), art. no. e15117.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Freilich, S., Zarecki, R., Eilam, O., Segal, E.S., Henry, C.S., Kupiec, M., Gophna, U., Sharan, R., &amp;amp; Ruppin, E. (2011). Competitive and cooperative metabolic interactions in bacterial communities. Nature Communications, 2(1), art. no. 589.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Macy, M.W., &amp;amp; Skvoretz, J. (1998). The evolution of trust and cooperation between strangers: a computational model. American Sociological Review, 63(5), 638-660.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Santos, F.C., Rodrigues, J.F., &amp;amp; Pacheco, J.M. (2006). Graph topology plays a determinant role in the evolution of cooperation. Proceedings of the Royal Society B: Biological Sciences, 273(1582), 51-55.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Nakamaru, M., Matsuda, H., &amp;amp; Iwasa, Y. (1997). The evolution of cooperation in a lattice-structured population. Journal of Theoretical Biology, 184(1), 65-81.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Hammond, R.A., &amp;amp; Axelrod, R. (2006). The evolution of ethnocentrism. Journal of Conflict Resolution, 50(6), 926-936.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">Y&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Helbing, D., Szolnoki, A., Perc, M., &amp;amp; Szabó, G. (2010). Evolutionary establishment of moral and double moral standards through spatial interactions. PLoS Computational Biology, 6(4).&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Wang, Z., Szolnoki, A., &amp;amp; Perc, M. (2013). Optimal interdependence between networks for the evolution of cooperation. Scientific Reports, 3, art. no. 2470.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Crowd Dynamics</title><link>/docs/models/crowd-dynamics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/models/crowd-dynamics/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="width:50%;" rowspan=2>Model Citation&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>Status&lt;/th>
+&lt;th style="text-align:center;" rowspan=2>GitHub Link&lt;/th>
+&lt;th style="text-align:center;" colspan=5>FAIR Criterion Assessment&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;th style="font-size:80%;text-align:center;">Code Available?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">License?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">DOI?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Document-ation?&lt;/th>
+&lt;th style="font-size:80%;text-align:center;">Clean Code?&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="width:50%;">Helbing, D., &amp;amp; Molnár, P. (1995). Social force model for pedestrian dynamics. Physical Review E, 51(5), 4282-4286.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Olfati-Saber, R. (2006). Flocking for multi-agent dynamic systems: Algorithms and theory. IEEE Transactions on Automatic Control, 51(3), 401-420.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Helbing, D., Farkas, I., &amp;amp; Vicsek, T. (2000). Simulating dynamical features of escape panic. Nature, 407(6803), 487-490.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Helbing, D., Buzna, L., Johansson, A., &amp;amp; Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. Transportation Science, 39(1), 1-24.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Moussaïd, M., Helbing, D., &amp;amp; Theraulaz, G. (2011). How simple rules determine pedestrian behavior and crowd disasters. Proceedings of the National Academy of Sciences of the United States of America, 108(17), 6884-6888.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Ward, A.J.W., Sumpter, D.J.T., Couzin, I.D., Hart, P.J.B., &amp;amp; Krause, J. (2008). Quorum decision-making facilitates information transfer in fish shoals. Proceedings of the National Academy of Sciences of the United States of America, 105(19), 6948-6953.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Lakoba, T.I., Kaup, D.J., &amp;amp; Finkelstein, N.M. (2005). Modifications of the Helbing-Molnár-Farkas-Vicsek Social Force Model for Pedestrian Evolution. Simulation, 81(5), 339-352.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Kreft, J.-U., Booth, G., &amp;amp; Wimpenny, J.W.T. (1998). BacSim, a simulator for individual-based modelling of bacterial colony growth. Microbiology, 144(12), 3275-3287.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">A&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Thompson, P.A., &amp;amp; Marchant, E.W. (1995). A computer model for the evacuation of large building populations. Fire Safety Journal, 24(2), 131-148.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">D&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Shi, J., Ren, A., &amp;amp; Chen, C. (2009). Agent-based evacuation model of large public buildings under fire conditions. Automation in Construction, 18(3), 338-347.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">C&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Alizadeh, R. (2011). A dynamic cellular automaton model for evacuation process with obstacles. Safety Science, 49(2), 315-323.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Yates, C.A., Erban, R., Escudero, C., Couzin, I.D., Buhl, J., Kevrekidis, I.G., Maini, P.K., &amp;amp; Sumpter, D.J.T. (2009). Inherent noise can facilitate coherence in collective swarm motion. Proceedings of the National Academy of Sciences of the United States of America, 106(14), 5464-5469.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Pelechano, N., &amp;amp; Badler, N.I. (2006). Modeling crowd and trained leader behavior during building evacuation. IEEE Computer Graphics and Applications, 26(6), 80-86.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Yu, W.J., Chen, R., Dong, L.Y., &amp;amp; Dai, S.Q. (2005). Centrifugal force model for pedestrian dynamics. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 72(2), art. no. 026112.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Liu, Y., &amp;amp; Passino, K.M. (2004). Stable social foraging swarms in a noisy environment. IEEE Transactions on Automatic Control, 49(1), 30-44.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Shi, H., Wang, L., &amp;amp; Chu, T. (2006). Virtual leader approach to coordinated control of multiple mobile agents with asymmetric interactions. Physica D: Nonlinear Phenomena, 213(1), 51-65.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Yamamoto, K., Kokubo, S., &amp;amp; Nishinari, K. (2007). Simulation for pedestrian dynamics by real-coded cellular automata (RCA). Physica A: Statistical Mechanics and its Applications, 379(2), 654-660.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Wagner, N., &amp;amp; Agrawal, V. (2014). An agent-based simulation system for concert venue crowd evacuation modeling in the presence of a fire disaster. Expert Systems with Applications, 41(6), 2807-2815.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Kirchner, A., Klu?pfel, H., Nishinari, K., Schadschneider, A., &amp;amp; Schreckenberg, M. (2004). Discretization effects and the influence of walking speed in cellular automata models for pedestrian dynamics. Journal of Statistical Mechanics: Theory and Experiment, (10), art. no. P10011.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Yang, L.Z., Zhao, D.L., Li, J., &amp;amp; Fang, T.Y. (2005). Simulation of the kin behavior in building occupant evacuation based on Cellular Automaton. Building and Environment, 40(3), 411-415.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Henein, C.M., &amp;amp; White, T. (2007). Macroscopic effects of microscopic forces between agents in crowd models. Physica A: Statistical Mechanics and its Applications, 373, 694-712.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Yu, W., &amp;amp; Johansson, A. (2008). Modeling crowd turbulence by many-particle simulations. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 76(4), art. no. 046105.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Karamouzas, I., Heil, P., Van Beek, P., &amp;amp; Overmars, M.H. (2009). A predictive collision avoidance model for pedestrian simulation. Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), 5884 LNCS, 41-52.&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="width:50%;">Batty, M., Desyllas, J., &amp;amp; Duxbury, E. (2003). The discrete dynamics of small-scale spatial events: Agent-based models of mobility in carnivals and street parades. International Journal of Geographical Information Science, 17(7), 673-697. &lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">N&lt;/td>
+&lt;td style="text-align:center;">B&lt;/td>
+&lt;td style="text-align:center;">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
