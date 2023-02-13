@@ -18,6 +18,11 @@ jobs:
           . ./.env
           echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
 
+      - name: Add hugo nodejs dependencies
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -30,6 +35,7 @@ jobs:
         env:
           HUGO_ENV: "production"
         run: |
+          yarn install
           hugo mod init github.com/make-models-fair/make-models-fair.github.io
           hugo mod get github.com/google/docsy@v0.4.0
           hugo --minify
