@@ -1,7 +1,3 @@
-## ========================================
-## Commands for building and testing OMF website deployment
-## ========================================
-
 # Settings
 MAKEFILES=Makefile $(wildcard *.mk)
 UID=$(shell id -u)
