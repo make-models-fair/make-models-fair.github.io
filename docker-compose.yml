@@ -1,0 +1,17 @@
+services:
+  hugo:
+    image: make-models-fair/tobefair:latest
+    build:
+      context: .
+      args:
+        HUGO_VERSION: ${HUGO_VERSION}
+    ports:
+      - "127.0.0.1:1313:1313"
+    volumes:
+      - ./archetypes:/src/archetypes
+      - ./assets:/src/assets
+      - ./content:/src/content
+      - ./layouts:/src/layouts
+      - ./data:/src/data
+      - ./.git:/src/.git
+      - /src/node_modules
