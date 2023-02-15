@@ -28,7 +28,7 @@
     <tr>
       <td style="width:50%;">{{ index $csv 0 }}</td>
       <td style="text-align:center;">{{ index $csv 7 }}</td>
-      <td style="text-align:center;">{{ index $csv 8 }}</td>
+      <td style="text-align:center;">{{ index $csv 8 | markdownify }}</td>
       <td style="text-align:center;">{{ index $csv 2 }}</td>
       <td style="text-align:center;">{{ index $csv 3 }}</td>
       <td style="text-align:center;">{{ index $csv 4 }}</td>
