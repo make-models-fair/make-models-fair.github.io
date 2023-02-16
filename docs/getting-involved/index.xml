@@ -25,30 +25,33 @@
 &lt;ul>
 &lt;li>
 &lt;p>Select the green &amp;ldquo;New issue&amp;rdquo; button at the above link
-&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 310px">
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 310px">
 &lt;img class="card-img-top" src="/docs/getting-involved/checklist/new_issue_screenshot_hu96bee5d161924b5264662553077dfcd6_14925_300x0_resize_catmullrom_3.png" width="300" height="55">
-&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
-&lt;/div>
-&lt;/div>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Get started with the &amp;ldquo;Add a Model&amp;rdquo; issue template
-&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
 &lt;img class="card-img-top" src="/docs/getting-involved/checklist/issue_template_screenshot_huf5d33e24cd2022c830bb9690aff74d39_34747_600x0_resize_catmullrom_3.png" width="600" height="53">
-&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
-&lt;/div>
-&lt;/div>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Update the template with the appropriate issue name where it says [NAME-YEAR] and the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE]
-&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
 &lt;img class="card-img-top" src="/docs/getting-involved/checklist/update_template_screenshot_huc3a8a0dc256f750196a5a4a8f2fde2d0_274254_800x0_resize_catmullrom_3.png" width="800" height="369">
-&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
-&lt;/div>
-&lt;/div>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Name the issue based on the model publication citation using the following guidelines:&lt;/p>
@@ -74,12 +77,13 @@
 &lt;/li>
 &lt;li>
 &lt;p>Here&amp;rsquo;s an example issue for the following model citation: Nowak, M.A., &amp;amp; Sigmund, K. (1998). Evolution of indirect reciprocity by image scoring. Nature, 393(6685), 573-577.
-&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
 &lt;img class="card-img-top" src="/docs/getting-involved/checklist/example_issue_screenshot_hu536e4eeedb170caadb8a4593647ec2bf_284574_800x0_resize_catmullrom_3.png" width="800" height="402">
-&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
-&lt;/div>
-&lt;/div>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -99,12 +103,12 @@
 &lt;/ul>
 &lt;br>
 &lt;p>Following from our previous example of the Nowak &amp;amp; Sigmund (1998) model publication, below is a screenshot showing the two labels this issue should have (once work has begun):&lt;/p>
-&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
 &lt;img class="card-img-top" src="/docs/getting-involved/checklist/example_labels_screenshot_hu536e4eeedb170caadb8a4593647ec2bf_284355_800x0_resize_catmullrom_3.png" width="800" height="402">
-&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
-&lt;/div>
-&lt;/div>
+&lt;/figcaption>
+&lt;/figure>
 &lt;hr>
 &lt;h4 id="five">&lt;strong>5. Get to work!&lt;/strong>&lt;/h4>
 &lt;ul>
