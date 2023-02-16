@@ -99,12 +99,20 @@
 &lt;hr>
 &lt;h4 id="four">&lt;strong>4. Write a note in the issue &amp;amp; update the labels&lt;/strong>&lt;/h4>
 &lt;ul>
-&lt;li>Write a note in the issue to indicate your intention to work on this model, and provide any other relevant details on your anticipated timeline or process for doing so.
+&lt;li>
+&lt;p>Write a note in the issue to indicate your intention to work on this model, and provide any other relevant details on your anticipated timeline or process for doing so.
 &lt;br>
-&lt;br>&lt;/li>
-&lt;li>Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the &amp;ldquo;In progress&amp;rdquo; or &amp;ldquo;Collaborators needed&amp;rdquo; labels for the issue.&lt;/li>
-&lt;li>Add the green label associated with the category of the model.&lt;/li>
-&lt;li>If you have just created an issue, two administrators will be automatically assigned to the issue so that they can create a new repository for this model.&lt;/li>
+&lt;br>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the &amp;ldquo;In progress&amp;rdquo; or &amp;ldquo;Collaborators needed&amp;rdquo; labels for the issue.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add the green label associated with the category of the model.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you have just created an issue, two administrators will be automatically assigned to the issue so that they can create a new repository for this model.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;br>
 &lt;p>Following from our previous example of the Nowak &amp;amp; Sigmund (1998) model publication, below is a screenshot showing the two labels this issue should have (once work has begun):&lt;/p>
