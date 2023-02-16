@@ -51,8 +51,7 @@ weight: 1
 
 #### __4. Write a note in the issue & update the labels__ {#four}
   * Write a note in the issue to indicate your intention to work on this model, and provide any other relevant details on your anticipated timeline or process for doing so.
-  <br>
-  <br>
+ 
   * Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the "In progress" or "Collaborators needed" labels for the issue.
  
   * Add the green label associated with the category of the model.
