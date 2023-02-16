@@ -1966,13 +1966,10 @@ font-size: 0.75em;
 &lt;tr>
 &lt;td>&lt;small>Helbing, D., &amp;amp; Molnár, P. (1995). Social force model for pedestrian dynamics. Physical Review E, 51(5), 4282-4286.&lt;/small>&lt;/td>
 &lt;td>
-&lt;a
-class="btn btn-dark btn-sm py-0 text-nowrap"
-href="https://github.com/make-models-fair/coordination/issues/new?labels=Not+yet+started&amp;template=add-a-model.md&amp;title=helbing-molnar-1995"
-target="_blank"
->
-&lt;i class="fa-brands fa-github">&lt;/i>
-Create Issue
+&lt;a href="https://github.com/make-models-fair/coordination/issues/8">
+&lt;i class="fa-brands fa-github -text-dark">&lt;/i>
+helbing-molnar-1995
+&lt;span class="badge badge-pill -bg-purple">Not yet started&lt;/span>
 &lt;/a>
 &lt;/td>
 &lt;td class="text-center">
@@ -1993,13 +1990,10 @@ Create Issue
 &lt;tr>
 &lt;td>&lt;small>Olfati-Saber, R. (2006). Flocking for multi-agent dynamic systems: Algorithms and theory. IEEE Transactions on Automatic Control, 51(3), 401-420.&lt;/small>&lt;/td>
 &lt;td>
-&lt;a
-class="btn btn-dark btn-sm py-0 text-nowrap"
-href="https://github.com/make-models-fair/coordination/issues/new?labels=Not+yet+started&amp;template=add-a-model.md&amp;title=olfati-saber-2006"
-target="_blank"
->
-&lt;i class="fa-brands fa-github">&lt;/i>
-Create Issue
+&lt;a href="https://github.com/make-models-fair/coordination/issues/9">
+&lt;i class="fa-brands fa-github -text-dark">&lt;/i>
+olfati-saber-2006
+&lt;span class="badge badge-pill -bg-purple">Not yet started&lt;/span>
 &lt;/a>
 &lt;/td>
 &lt;td class="text-center">
@@ -2020,13 +2014,10 @@ Create Issue
 &lt;tr>
 &lt;td>&lt;small>Helbing, D., Farkas, I., &amp;amp; Vicsek, T. (2000). Simulating dynamical features of escape panic. Nature, 407(6803), 487-490.&lt;/small>&lt;/td>
 &lt;td>
-&lt;a
-class="btn btn-dark btn-sm py-0 text-nowrap"
-href="https://github.com/make-models-fair/coordination/issues/new?labels=Not+yet+started&amp;template=add-a-model.md&amp;title=helbing-etal-2000"
-target="_blank"
->
-&lt;i class="fa-brands fa-github">&lt;/i>
-Create Issue
+&lt;a href="https://github.com/make-models-fair/coordination/issues/10">
+&lt;i class="fa-brands fa-github -text-dark">&lt;/i>
+helbing-etal-2000
+&lt;span class="badge badge-pill -bg-purple">Not yet started&lt;/span>
 &lt;/a>
 &lt;/td>
 &lt;td class="text-center">
