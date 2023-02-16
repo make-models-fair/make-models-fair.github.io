@@ -27,7 +27,6 @@ weight: 1
     * You can select the "Create Issue" button in the table row associated with the model, and it will open a pre-populated issue template for you. Just insert the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE].
    
     * Alternatively, to manually create a new issue, follow the steps (with screenshots) outlined below.
-  
       * Select the green "New issue" button in the [coordination repository](https://github.com/make-models-fair/coordination/issues).
       {{< imgproc new_issue_screenshot Resize "300x" >}} {{< /imgproc >}}
 
@@ -55,7 +54,9 @@ weight: 1
   <br>
   <br>
   * Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the "In progress" or "Collaborators needed" labels for the issue.
+ 
   * Add the green label associated with the category of the model.
+  
   * If you have just created an issue, two administrators will be automatically assigned to the issue so that they can create a new repository for this model.
 
 <br>
