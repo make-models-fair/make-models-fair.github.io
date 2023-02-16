@@ -9,7 +9,7 @@ weight: 1
   * On the Models page, you will find links to the four categories of models that have been preliminarily selected for inclusion -- Ecological Processes, Land Use, Cooperation, and Crowd Dynamics. Each category has between 20-25 model publications associated with it.
   <br>
   <br>
-  * Each category has a sub-page with a table identifying the [initial assessments](/docs/process/assessment) of each model's "scores" on the five FAIR criteria, their current status in the making FAIR process (e.g., "Not yet started", "In progress"), and a link to an associated issue in the [GitHub coordination repository](https://github.com/make-models-fair/coordination/issues) if the model is "In process".
+  * Each category has a sub-page with a table identifying the [initial assessments](/docs/process/assessment) of each model's "scores" on the five FAIR criteria, their current status in the making FAIR process (e.g., "Not yet started", "In progress"), and a link to an associated issue in the [GitHub coordination repository](https://github.com/make-models-fair/coordination/issues) if the model is "In progress".
     * Note: a small selection of "Not yet started" models already have Github issue trackers associated with them, to illustrate how the process will look.
 
 <hr>
@@ -24,22 +24,26 @@ weight: 1
   <br>
   <br>
   * If the model has not yet had any contributors, create a new issue in the [coordination repository](https://github.com/make-models-fair/coordination/issues).
-    * Select the green "New issue" button at the above link
-    {{< imgproc new_issue_screenshot Resize "300x" >}} {{< /imgproc >}}
+    * You can select the "Create Issue" button in the table row associated with the model, and it will open a pre-populated issue template for you. Just insert the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE].
+   
+    * Alternatively, to manually create a new issue, follow the steps (with screenshots) outlined below.
+  
+      * Select the green "New issue" button in the [coordination repository](https://github.com/make-models-fair/coordination/issues).
+      {{< imgproc new_issue_screenshot Resize "300x" >}} {{< /imgproc >}}
 
-    * Get started with the "Add a Model" issue template
-    {{< imgproc issue_template_screenshot Resize "600x" >}} {{< /imgproc >}}
+      * Get started with the "Add a Model" issue template
+      {{< imgproc issue_template_screenshot Resize "600x" >}} {{< /imgproc >}}
 
-    * Update the template with the appropriate issue name where it says [NAME-YEAR] and the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE]
-    {{< imgproc update_template_screenshot Resize "800x" >}} {{< /imgproc >}}
+      * Update the template with the appropriate issue name where it says [NAME-YEAR] and the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE]
+      {{< imgproc update_template_screenshot Resize "800x" >}} {{< /imgproc >}}
 
-    * Name the issue based on the model publication citation using the following guidelines:
-      - _One author:_ name-year
-        - Example: zhang-2004
-      - _Two authors:_ name1-name2-year
-        - Example: zhang-smith-2004
-      - _Three or more authors:_ name1-etal-year
-        - Example: zhang-etal-2004
+      * Name the issue based on the model publication citation using the following guidelines:
+        - _One author:_ name-year
+          - Example: zhang-2004
+        - _Two authors:_ name1-name2-year
+          - Example: zhang-smith-2004
+        - _Three or more authors:_ name1-etal-year
+          - Example: zhang-etal-2004
     <br>
     <br>
     * Here's an example issue for the following model citation: Nowak, M.A., & Sigmund, K. (1998). Evolution of indirect reciprocity by image scoring. Nature, 393(6685), 573-577.
@@ -51,8 +55,8 @@ weight: 1
   <br>
   <br>
   * Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the "In progress" or "Collaborators needed" labels for the issue.
-    * If you have just created an issue, the "In progress" label will automatically be associated with the issue. This is a very important step, as the label "In progress" will trigger an automated email to fair@comses.net asking for a new model repository to be created for this model.
   * Add the green label associated with the category of the model.
+  * If you have just created an issue, two administrators will be automatically assigned to the issue so that they can create a new repository for this model.
 
 <br>
 
