@@ -11,9 +11,10 @@ Are you ready to contribute to increasing the findability, accessibility, intero
 
 1. [Check out the models](/docs/getting-involved/checklist/#one)
 2. [Identify what you'd like to work on](/docs/getting-involved/checklist/#two)
-3. [Create or contribute to a GitHub issue](/docs/getting-involved/checklist/#three)
-4. [Update issue labels](/docs/getting-involved/checklist/#four)
-5. [Get to work!](/docs/getting-involved/checklist/#five)
+3. [Get set up on GitHub](/docs/getting-involved/checklist/#three)
+4. [Create or contribute to a GitHub issue](/docs/getting-involved/checklist/#four)
+5. [Update issue labels](/docs/getting-involved/checklist/#five)
+6. [Get to work!](/docs/getting-involved/checklist/#six)
 
 <hr>
 

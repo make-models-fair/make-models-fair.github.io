@@ -19,13 +19,20 @@ weight: 1
 
 <hr>
 
-#### __3. For any model you are interested in, create or contribute to an associated issue in the [coordination repository](https://github.com/make-models-fair/coordination/issues)__ {#three}
+#### __3. Learn more about how to collaborate using Git and GitHub__ {#three}
+  * Git is a version control system, or VCS, that tracks the history of changes as people and teams collaborate on projects together. GitHub is an online code hosting platform for version control (using Git) that allows for collaboration on projects from anywhere.
+  * You will need a GitHub account -- and to know some of the basic functionality and terminology of Git/GitHub -- to participate in this initiative.
+  * Check out this [step-by-step tutorial](https://comses.net/education/intro-to-git-github/) to get started, and/or read this [introduction from GitHub Docs](https://docs.github.com/en/get-started/quickstart/hello-world) to dig a bit deeper.
+
+<hr>
+
+#### __4. For any model you are interested in, create or contribute to an associated issue in the [coordination repository](https://github.com/make-models-fair/coordination/issues)__ {#four}
   * If there is already an existing issue for the model you're interested in, there should be a link in the "GitHub Link" column of the table. This issue is where you will track and document progress and collaborate with others.
   <br>
   <br>
   * If the model has not yet had any contributors, create a new issue in the [coordination repository](https://github.com/make-models-fair/coordination/issues).
     * You can select the "Create Issue" button in the table row associated with the model, and it will open a pre-populated issue template for you. Just insert the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE].
-   
+
     * Alternatively, to manually create a new issue, follow the steps (with screenshots) outlined below.
       * Select the green "New issue" button in the [coordination repository](https://github.com/make-models-fair/coordination/issues).
       {{< imgproc new_issue_screenshot Resize "300x" >}} {{< /imgproc >}}
@@ -49,13 +56,13 @@ weight: 1
     {{< imgproc example_issue_screenshot Resize "800x" >}} {{< /imgproc >}}
 <hr>
 
-#### __4. Write a note in the issue & update the labels__ {#four}
+#### __5. Write a note in the issue & update the labels__ {#five}
   * Write a note in the issue to indicate your intention to work on this model, and provide any other relevant details on your anticipated timeline or process for doing so.
- 
+
   * Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the "In progress" or "Collaborators needed" labels for the issue.
- 
+
   * Add the green label associated with the category of the model.
-  
+
   * If you have just created an issue, two administrators will be automatically assigned to the issue so that they can create a new repository for this model.
 
 <br>
@@ -66,7 +73,7 @@ weight: 1
 
 <hr>
 
-#### __5. Get to work!__ {#five}
+#### __6. Get to work!__ {#six}
   * You will get a notification on your associated issue that there is a new model repository ready for your use. In the meantime, use the documentation on the [Process](/docs/process/) and [How to Make FAIR](/docs/process/how-to) pages as a checklist.
   <br>
   <br>
