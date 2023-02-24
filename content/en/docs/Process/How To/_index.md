@@ -35,7 +35,7 @@ Please share your experiences or reflections on the [discussion page](https://gi
 
 | Problem                | Solution               |
 |------------------------|------------------------|
-| The model code repository has no DOI.| Archive the model code in an archive that provides a DOI, such as [Zenodo](https://zenodo.org). <br> _[See here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) for more information on making code citable by linking GitHub with Zenodo._|
+| The model code repository has no DOI.| Archive the model code in an archive that provides a DOI, such as [Zenodo](https://zenodo.org) or [CoMSES Net](https://comses.net). <br> * _[See here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) for more information on making code citable by linking GitHub with Zenodo._ <br> * _Learn how to [archive](https://www.comses.net/codebases/add/) and [submit your model for peer review](https://www.comses.net/reviews/) on CoMSES Net._|
 
 ----------------
 <br>
