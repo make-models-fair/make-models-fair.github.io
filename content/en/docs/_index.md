@@ -11,7 +11,7 @@ menu:
 ### __What is it?__
 The goal of this initiative is to provide capacity-building opportunities to improve the skill, practices, and protocols to make computational models findable, accessible, interoperable, and reusable (FAIR). We have selected a list of highly cited papers in different domains and developed a protocol for making those models FAIR. Our aim is to make over 100 models FAIR, with the help of the modeling community. We will stimulate activities to advance model analysis of those FAIR models using high throughput computing.
 
-This initiative is in partnership with the Network for Computational Modeling in Social and Ecological Sciences ([CoMSES Net](https://comses.net)) and [OTHER PARTNERS?]
+The initial development of this initiative has had contributors from the Network for Computational Modeling in Social and Ecological Sciences ([CoMSES Net](https://comses.net)). The initiative has endorsements from many other modelling organizations.
 
 ### __Why should I get involved?__
 The Making Models FAIR initiative may provide many opportunities for networking, paper publications, and training and learning. Community members may wish to collaborate on making a selection of highly-cited models FAIR in order to publish their work and share more widely with the scientific community. Or, they may seek to replicate findings or perform additional parameter sweeps and sensitivity tests for better understanding of some of the most classic models that are frequently re-used and referenced.
