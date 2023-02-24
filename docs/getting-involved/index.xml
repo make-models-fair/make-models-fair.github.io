@@ -16,7 +16,14 @@
 &lt;li>Note: for any newly suggested model, you will need to first &lt;a href="/docs/process/assessment">assess the model publication&lt;/a> on the five FAIR criteria.&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h4 id="three">&lt;strong>3. For any model you are interested in, create or contribute to an associated issue in the &lt;a href="https://github.com/make-models-fair/coordination/issues">coordination repository&lt;/a>&lt;/strong>&lt;/h4>
+&lt;h4 id="three">&lt;strong>3. Learn more about how to collaborate using Git and GitHub&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>Git is a version control system, or VCS, that tracks the history of changes as people and teams collaborate on projects together. GitHub is an online code hosting platform for version control (using Git) that allows for collaboration on projects from anywhere.&lt;/li>
+&lt;li>You will need a GitHub account &amp;ndash; and to know some of the basic functionality and terminology of Git/GitHub &amp;ndash; to participate in this initiative.&lt;/li>
+&lt;li>Check out this &lt;a href="https://comses.net/education/intro-to-git-github/">step-by-step tutorial&lt;/a> to get started, and/or read this &lt;a href="https://docs.github.com/en/get-started/quickstart/hello-world">introduction from GitHub Docs&lt;/a> to dig a bit deeper.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="four">&lt;strong>4. For any model you are interested in, create or contribute to an associated issue in the &lt;a href="https://github.com/make-models-fair/coordination/issues">coordination repository&lt;/a>&lt;/strong>&lt;/h4>
 &lt;ul>
 &lt;li>If there is already an existing issue for the model you&amp;rsquo;re interested in, there should be a link in the &amp;ldquo;GitHub Link&amp;rdquo; column of the table. This issue is where you will track and document progress and collaborate with others.
 &lt;br>
@@ -97,7 +104,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h4 id="four">&lt;strong>4. Write a note in the issue &amp;amp; update the labels&lt;/strong>&lt;/h4>
+&lt;h4 id="five">&lt;strong>5. Write a note in the issue &amp;amp; update the labels&lt;/strong>&lt;/h4>
 &lt;ul>
 &lt;li>
 &lt;p>Write a note in the issue to indicate your intention to work on this model, and provide any other relevant details on your anticipated timeline or process for doing so.&lt;/p>
@@ -121,7 +128,7 @@
 &lt;/figcaption>
 &lt;/figure>
 &lt;hr>
-&lt;h4 id="five">&lt;strong>5. Get to work!&lt;/strong>&lt;/h4>
+&lt;h4 id="six">&lt;strong>6. Get to work!&lt;/strong>&lt;/h4>
 &lt;ul>
 &lt;li>You will get a notification on your associated issue that there is a new model repository ready for your use. In the meantime, use the documentation on the &lt;a href="/docs/process/">Process&lt;/a> and &lt;a href="/docs/process/how-to">How to Make FAIR&lt;/a> pages as a checklist.
 &lt;br>

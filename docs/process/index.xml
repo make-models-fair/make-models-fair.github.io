@@ -145,7 +145,7 @@ For the sake of this initiative, &lt;strong>a model would be considered FAIR onc
 &lt;tbody>
 &lt;tr>
 &lt;td>The model code repository has no DOI.&lt;/td>
-&lt;td>Archive the model code in an archive that provides a DOI, such as &lt;a href="https://zenodo.org">Zenodo&lt;/a>. &lt;br> &lt;em>&lt;a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">See here&lt;/a> for more information on making code citable by linking GitHub with Zenodo.&lt;/em>&lt;/td>
+&lt;td>Archive the model code in an archive that provides a DOI, such as &lt;a href="https://zenodo.org">Zenodo&lt;/a> or &lt;a href="https://comses.net">CoMSES Net&lt;/a>. &lt;br> * &lt;em>&lt;a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">See here&lt;/a> for more information on making code citable by linking GitHub with Zenodo.&lt;/em> &lt;br> * &lt;em>Learn how to &lt;a href="https://www.comses.net/codebases/add/">archive&lt;/a> and &lt;a href="https://www.comses.net/reviews/">submit your model for peer review&lt;/a> on CoMSES Net.&lt;/em>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
