@@ -10,18 +10,34 @@
 {{ $csv := getCSV $delimiter $src }}
 {{ $domain := .Get "domain" }}
 
-<table>
+<table id="model-table">
   <thead>
     <tr>
-      <th rowspan=2>Model Citation</th>
-      <th rowspan=2>GitHub Link
-        <a href="/docs/getting-involved/checklist">
-          <small><i class="fa-regular fa-circle-question -text-blue"></i></small>
-        </a>
+      <th colspan=2>
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        <input
+          type="text"
+          id="filter"
+          placeholder="Filter model list"
+          class="form-control"
+          onkeyup="filterTable('filter', 'model-table')"
+        ></input>
+        </div>
       </th>
       <th class="text-center" colspan=5>FAIR Criterion Assessment</th>
     </tr>
     <tr>
+      <th>Model Citation</th>
+      <th>GitHub Link
+        <a href="/docs/getting-involved/checklist">
+          <small><i class="fa-regular fa-circle-question -text-blue"></i></small>
+        </a>
+      </th>
       <th class="text-center th-small">Code Available?</th>
       <th class="text-center th-small">License?</th>
       <th class="text-center th-small">DOI?</th>
@@ -126,6 +142,26 @@
   {{ end }}
   </tbody>
 </table>
+
+<script>
+  const filterTable = (inputId, tableId) => {
+    const filter = document.getElementById(inputId).value.toUpperCase();
+    const table = document.getElementById(tableId);
+    const rows = table.getElementsByTagName("tr");
+
+    for (const row of rows) {
+      const cell = row.getElementsByTagName("td")[0];
+      if (cell) {
+        const value = cell.textContent || cell.innerText;
+        if (value.toUpperCase().indexOf(filter) > -1) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      }
+    }
+  }
+</script>
 
 <style>
   .th-small {
