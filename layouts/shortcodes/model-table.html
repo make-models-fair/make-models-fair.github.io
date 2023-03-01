@@ -1,0 +1,49 @@
+{{/*  Display a table grouped by domain from models.json  */}}
+
+{{ $src := .Get "src" }}
+{{ $delimiter := .Get "delimiter" | default "," }}
+{{ $csv := getCSV $delimiter $src }}
+{{ $domain := .Get "domain" }}
+
+<table id="model-table">
+  {{ partial "model-table/header.html" }}
+  <tbody>
+  {{ range $csv := after 1 $csv }}
+    {{if in (index . 1) $domain }}
+    {{/*  FIXME: should probably be unmarshalled automatically  */}}
+      {{ $citation := index $csv 0 }}
+      {{ $issue_link := index $csv 8 }}
+      {{ $short_name := index $csv 9 }}
+      {{ $status := index $csv 7 }}
+      {{ $available_code := index $csv 2 }}
+      {{ $license := index $csv 3 }}
+      {{ $doi := index $csv 4 }}
+      {{ $docs := index $csv 5 }}
+      {{ $clean_code := index $csv 6 }}
+      <tr>
+        <td><small>{{ index $csv 0 }}</small></td>
+        {{ partial "model-table/issue-link-cell.html"
+           (dict "url" $issue_link "name" $short_name "citation" $citation "status" $status) }}
+        {{ partial "model-table/binary-badge-cell.html"
+           (dict "data" $available_code "yeslabel" "Has Code" "nolabel" "No Code") }}
+        {{ partial "model-table/binary-badge-cell.html"
+           (dict "data" $license "yeslabel" "Licensed" "nolabel" "No License") }}
+        {{ partial "model-table/binary-badge-cell.html"
+           (dict "data" $doi "yeslabel" "Has DOI" "nolabel" "No DOI") }}
+        {{ partial "model-table/grade-badge-cell.html"
+           (dict "grade" $docs) }}
+        {{ partial "model-table/grade-badge-cell.html"
+           (dict "grade" $clean_code) }}
+      </tr>
+    {{ end }}
+  {{ end }}
+  </tbody>
+</table>
+
+<script src="/tablefilter.js"></script>
+
+<style>
+  .th-small {
+    font-size: 0.75em;
+  }
+</style>

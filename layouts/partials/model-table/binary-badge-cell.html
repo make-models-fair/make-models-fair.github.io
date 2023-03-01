@@ -1,0 +1,7 @@
+<td class="text-center">
+  {{ if eq .data "Y" }}
+    <span class="badge -bg-teal">{{ .yeslabel }}</span>
+  {{ else if eq .data "N" }}
+    <span class="badge -text-gray">{{ .nolabel }}</span>
+  {{ end }}
+</td>

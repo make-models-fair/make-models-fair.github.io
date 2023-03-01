@@ -4,4 +4,4 @@ linkTitle: "Crowd Dynamics"
 weight: 4
 ---
 
-{{< csv-table src="data/model_status.csv" domain="Crowd Dynamics" >}}
+{{< model-table src="data/model_status.csv" domain="Crowd Dynamics" >}}
