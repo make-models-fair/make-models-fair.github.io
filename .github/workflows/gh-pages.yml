@@ -5,8 +5,10 @@ on:
     branches:
       - main
   pull_request:
-  repository_dispatch:
-    types: [trigger-deploy]
+  schedule:
+    - cron: "0 0 * * *"
+  # repository_dispatch:
+  #   types: [trigger-deploy]
 
 jobs:
   deploy:
