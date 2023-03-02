@@ -1,0 +1,13 @@
+<td class="text-center">
+  {{ if eq .grade "A" }}
+    <span class="badge -bg-teal">{{ .grade }}</span>
+  {{ else if eq .grade "B" }}
+    <span class="badge -bg-green">{{ .grade }}</span>
+  {{ else if eq .grade "C" }}
+    <span class="badge -bg-yellow">{{ .grade }}</span>
+  {{ else if eq .grade "D" }}
+    <span class="badge -bg-warning">{{ .grade }}</span>
+  {{ else if eq .grade "E" }}
+    <span class="badge -bg-red">{{ .grade }}</span>
+  {{ end }}
+</td>

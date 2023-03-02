@@ -8,6 +8,8 @@
   # Useful when translating.
   enableMissingTranslationPlaceholders = true
 
+  staticDir = ["static", "js"]
+
   enableRobotsTXT = true
 
   # Will give values to .Lastmod etc.

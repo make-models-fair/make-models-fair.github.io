@@ -4,4 +4,4 @@ linkTitle: "Land Use"
 weight: 2
 ---
 
-{{< csv-table src="data/model_status.csv" domain="Land Use" >}}
+{{< model-table src="https://raw.githubusercontent.com/make-models-fair/coordination/main/data/models.csv" domain="Land Use" >}}

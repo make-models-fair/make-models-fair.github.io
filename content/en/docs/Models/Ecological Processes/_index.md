@@ -4,4 +4,4 @@ linkTitle: "Ecological Processes"
 weight: 1
 ---
 
-{{< csv-table src="data/model_status.csv" domain="Ecological Processes" >}}
+{{< model-table src="https://raw.githubusercontent.com/make-models-fair/coordination/main/data/models.csv" domain="Ecological Processes" >}}

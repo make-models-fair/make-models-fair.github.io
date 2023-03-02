@@ -1,0 +1,36 @@
+<td>
+  {{ if .url }}
+    <a href="{{ .url }}">
+      <i class="fa-brands fa-github -text-dark"></i>
+      {{ .name }}
+      {{ if eq .status "Not yet started" }}
+        <span class="badge badge-pill -bg-purple">{{ .status }}</span>
+      {{ else if eq .status "Looking for collaborators" }}
+        <span class="badge badge-pill -bg-warning">{{ .status }}</span>
+      {{ else if eq .status "In progress" }}
+        <span class="badge badge-pill -bg-teal">{{ .status }}</span>
+      {{ else if eq .status "Meets FAIR criteria!" }}
+        <span class="badge badge-pill -bg-success">{{ .status }}</span>
+      {{ end }}
+    </a>
+  {{ else }}
+    {{ $assignees := urlquery "kaclaborn, manuvanegas" | safeURL }}
+    {{ $labels := urlquery "Not yet started" | safeURL }}
+    {{ $template := urlquery "add-a-model.md" | safeURL }}
+    {{ $title := urlquery .name | safeURL }}
+    {{ $body := urlquery "#### This is the first comment in the issue associated with the following model publication:\n\n### "
+      .citation "\n\n<hr>\n\n" "Use this issue for:\n* tracking progress in the making FAIR process"
+      "\n* collaborating and dividing tasks" "\n* documenting each step of the process (i.e., when each of the FAIR criteria are met, or any issues you have found in achieving the criteria)"
+      "\n\n_Be sure to update the issue with a green label, indicating the appropriate model category. Also, make sure that you stay up to date with the yellow labels, indicating the model's status in the making FAIR process._"
+      | safeURL
+    }}
+    <a
+      class="btn btn-dark btn-sm py-0 text-nowrap"
+      href="https://github.com/make-models-fair/coordination/issues/new?assignees={{ $assignees }}&labels={{ $labels }}&template={{ $template }}&title={{ $title }}&body={{ $body }}"
+      target="_blank"
+    >
+      <i class="fa-brands fa-github"></i>
+      Create Issue
+    </a>
+  {{ end }}
+</td>
