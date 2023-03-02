@@ -15,8 +15,9 @@
     </a>
   {{ else }}
     {{ $assignees := urlquery "kaclaborn, manuvanegas" | safeURL }}
-    {{ $labels := urlquery "Not yet started" | safeURL }}
-    {{ $template := urlquery "add-a-model.md" | safeURL }}
+    {{ $labels := urlquery "Not yet started, " .domain | safeURL }}
+    {{ $template_name := replace .domain " " "-" | lower }}
+    {{ $template := urlquery $template_name ".md" | safeURL }}
     {{ $title := urlquery .name | safeURL }}
     {{ $body := urlquery "#### This is the first comment in the issue associated with the following model publication:\n\n### "
       .citation "\n\n<hr>\n\n" "Use this issue for:\n* tracking progress in the making FAIR process"

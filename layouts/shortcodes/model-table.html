@@ -23,7 +23,7 @@
       <tr>
         <td><small>{{ index $csv 0 }}</small></td>
         {{ partial "model-table/issue-link-cell.html"
-           (dict "url" $issue_link "name" $short_name "citation" $citation "status" $status) }}
+           (dict "url" $issue_link "domain" $domain "name" $short_name "citation" $citation "status" $status) }}
         {{ partial "model-table/binary-badge-cell.html"
            (dict "data" $available_code "yeslabel" "Has Code" "nolabel" "No Code") }}
         {{ partial "model-table/binary-badge-cell.html"
