@@ -4,7 +4,7 @@ linkTitle: "Assess a Model"
 weight: 1
 ---
 
-Each model has been initially assessed against the five FAIR criteria based on the information provided in the associated publication (see each model's assessment on the [Models](/docs/models/) page). In the process of making the model FAIR, additional information may need to be brought in beyond what was only provided in the publication. The accompanying GitHub repository For each model publication will serve to keep the score on the improvements of the FAIR components of the published model.
+Each model has been initially assessed against the five FAIR criteria based on the information provided in the associated publication (see each model's assessment on the [Models](/docs/models/) page). In the process of making the model FAIR, additional information may need to be brought in beyond what was only provided in the publication. The accompanying GitHub repository for each model publication will serve to keep the score on the improvements of the FAIR components of the published model.
 
 Each of the five FAIR criteria are outlined below, with their associated "scoring" options.
 For the sake of this initiative, __a model would be considered FAIR once it achieves the bolded option for each criterion.__
