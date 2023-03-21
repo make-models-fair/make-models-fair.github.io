@@ -1431,18 +1431,19 @@ guimera-etal-2005
 &lt;/a>
 &lt;/td>
 &lt;td class="text-center">
-&lt;span class="badge -text-gray">No Code&lt;/span>
+&lt;span class="badge -bg-teal">Has Code&lt;/span>
 &lt;/td>
 &lt;td class="text-center">
-&lt;span class="badge -text-gray">No License&lt;/span>
+&lt;span class="badge -bg-teal">Licensed&lt;/span>
 &lt;/td>
 &lt;td class="text-center">
-&lt;span class="badge -text-gray">No DOI&lt;/span>
+&lt;span class="badge -bg-teal">Has DOI&lt;/span>
 &lt;/td>
 &lt;td class="text-center">
-&lt;span class="badge -bg-yellow">C&lt;/span>
+&lt;span class="badge -bg-teal">A&lt;/span>
 &lt;/td>
 &lt;td class="text-center">
+&lt;span class="badge -bg-teal">A&lt;/span>
 &lt;/td>
 &lt;/tr>
 &lt;tr>
