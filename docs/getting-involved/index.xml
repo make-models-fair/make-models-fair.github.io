@@ -26,81 +26,30 @@
 &lt;h4 id="four">&lt;strong>4. For any model you are interested in, create or contribute to an associated issue in the &lt;a href="https://github.com/make-models-fair/coordination/issues">coordination repository&lt;/a>&lt;/strong>&lt;/h4>
 &lt;ul>
 &lt;li>If there is already an existing issue for the model you&amp;rsquo;re interested in, there should be a link in the &amp;ldquo;GitHub Link&amp;rdquo; column of the table. This issue is where you will track and document progress and collaborate with others.
-&lt;br>
-&lt;br>&lt;/li>
-&lt;li>If the model has not yet had any contributors, create a new issue in the &lt;a href="https://github.com/make-models-fair/coordination/issues">coordination repository&lt;/a>.
-&lt;ul>
-&lt;li>
-&lt;p>You can select the &amp;ldquo;Create Issue&amp;rdquo; button in the table row associated with the model, and it will open a pre-populated issue template for you. Just insert the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE].&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Alternatively, to manually create a new issue, follow the steps (with screenshots) outlined below.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Select the green &amp;ldquo;New issue&amp;rdquo; button in the &lt;a href="https://github.com/make-models-fair/coordination/issues">coordination repository&lt;/a>.
-&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 310px">
-&lt;img class="card-img-top" src="/docs/getting-involved/checklist/new_issue_screenshot_hu96bee5d161924b5264662553077dfcd6_14925_300x0_resize_catmullrom_3.png" width="300" height="55">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text"> &lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Get started with the &amp;ldquo;Add a Model&amp;rdquo; issue template
 &lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-&lt;img class="card-img-top" src="/docs/getting-involved/checklist/issue_template_screenshot_huf5d33e24cd2022c830bb9690aff74d39_34747_600x0_resize_catmullrom_3.png" width="600" height="53">
+&lt;img class="card-img-top" src="/docs/getting-involved/checklist/example_issue_link_hue139d7fb9965338b17603991902cf588_90884_600x0_resize_catmullrom_3.png" width="600" height="108">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Update the template with the appropriate issue name where it says [NAME-YEAR] and the model publication citation where it says [INSERT MODEL PUBLICATION CITATION HERE]
-&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
-&lt;img class="card-img-top" src="/docs/getting-involved/checklist/update_template_screenshot_huc3a8a0dc256f750196a5a4a8f2fde2d0_274254_800x0_resize_catmullrom_3.png" width="800" height="369">
-&lt;figcaption class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text"> &lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Name the issue based on the model publication citation using the following guidelines:&lt;/p>
-&lt;ul>
-&lt;li>&lt;em>One author:&lt;/em> name-year
-&lt;ul>
-&lt;li>Example: zhang-2004&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;em>Two authors:&lt;/em> name1-name2-year
-&lt;ul>
-&lt;li>Example: zhang-smith-2004&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;em>Three or more authors:&lt;/em> name1-etal-year
-&lt;ul>
-&lt;li>Example: zhang-etal-2004
 &lt;br>
 &lt;br>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Here&amp;rsquo;s an example issue for the following model citation: Nowak, M.A., &amp;amp; Sigmund, K. (1998). Evolution of indirect reciprocity by image scoring. Nature, 393(6685), 573-577.
+&lt;li>If the model has not yet had any contributors, create a new issue by selecting the &amp;ldquo;Create Issue&amp;rdquo; button in the table row associated with the model, and a new tab will open with a pre-populated issue template in GitHub.
+&lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;img class="card-img-top" src="/docs/getting-involved/checklist/example_create_issue_hu0f27501609e03d3ae75de276c0d94d12_69577_600x0_resize_catmullrom_3.png" width="600" height="82">
+&lt;figcaption class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text"> &lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;br>
+&lt;br>&lt;/li>
+&lt;li>Here&amp;rsquo;s an example issue for the following model citation: Nowak, M.A., &amp;amp; Sigmund, K. (1998). Evolution of indirect reciprocity by image scoring. Nature, 393(6685), 573-577.
 &lt;figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
 &lt;img class="card-img-top" src="/docs/getting-involved/checklist/example_issue_screenshot_hu536e4eeedb170caadb8a4593647ec2bf_284574_800x0_resize_catmullrom_3.png" width="800" height="402">
 &lt;figcaption class="card-body px-0 pt-2 pb-0">
 &lt;p class="card-text"> &lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;hr>
@@ -108,12 +57,9 @@
 &lt;ul>
 &lt;li>
 &lt;p>Write a note in the issue to indicate your intention to work on this model, and provide any other relevant details on your anticipated timeline or process for doing so.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the &amp;ldquo;In progress&amp;rdquo; or &amp;ldquo;Collaborators needed&amp;rdquo; labels for the issue.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Add the green label associated with the category of the model.&lt;/p>
+&lt;ul>
+&lt;li>Be sure that the yellow labels are up to date, indicating the status by selecting either (or both) the &amp;ldquo;In progress&amp;rdquo; or &amp;ldquo;Collaborators needed&amp;rdquo; labels for the issue. To request changes to the yellow labels, make a comment to the issue.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>If you have just created an issue, two administrators will be automatically assigned to the issue so that they can create a new repository for this model.&lt;/p>
@@ -133,6 +79,6 @@
 &lt;li>You will get a notification on your associated issue that there is a new model repository ready for your use. In the meantime, use the documentation on the &lt;a href="/docs/process/">Process&lt;/a> and &lt;a href="/docs/process/how-to">How to Make FAIR&lt;/a> pages as a checklist.
 &lt;br>
 &lt;br>&lt;/li>
-&lt;li>Once you have received notification of your new model repository, please follow the instructions and guidelines on the repository&amp;rsquo;s README file for more information on using GitHub for collaboration (i.e., forking the repository, submitting pull requests), the process for making models FAIR, suggestions for the repository file structure, and using the issue tracker for documentation of progress.&lt;/li>
+&lt;li>Once you have received notification of your new model repository, please follow the instructions and guidelines on the repository&amp;rsquo;s README file for more information on using GitHub for collaboration (i.e., forking the repository, opening pull requests), the process for making models FAIR, suggestions for the repository file structure, and using the issue tracker for documentation of progress.&lt;/li>
 &lt;/ul>
 &lt;hr></description></item></channel></rss>
