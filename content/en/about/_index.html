@@ -13,7 +13,14 @@ menu:
 {{< /blocks/cover >}}
 
 {{% blocks/lead %}}
-The goal of this initiative is to provide capacity-building opportunities to improve the skill, practices, and protocols to make computational models findable, accessible, interoperable, and reusable (FAIR). We have selected a list of highly cited papers in different domains and developed a protocol for making those models FAIR. Our aim is to make over 100 models FAIR, with the help of the modeling community. We will stimulate activities to advance model analysis of those FAIR models using high throughput computing.
+The goal of this initiative is to provide capacity-building opportunities to improve the skill, practices, and protocols to make computational models findable, accessible, interoperable, and reusable (FAIR).
+<br>
+<br>
+We have selected a list of highly cited papers in different domains and developed a protocol for making those models FAIR. Our aim is to make over 100 models FAIR, with the help of the modeling community. We will stimulate activities to advance model analysis of those FAIR models using high throughput computing.
+<br>
+<br>
+<br>
+<h3><strong>Learn more about the initiative and process below!</strong></h3>
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" >}}
@@ -32,7 +39,45 @@ Learn about <a href="https://comses.net/education/responsible-practices/">the FA
 
 {{< /blocks/section >}}
 
-{{% blocks/section type="section" color="info" %}}
+{{% blocks/section color="info" type="row" %}}
+<h3><strong>Process for making<br>a model FAIR</strong></h3>
+
+```mermaid
+flowchart TD
+  List(Check out model publications list) --> Identify(Identify what you would like to work on)
+  Identify -- Choose from list --> Status(Check model status in making FAIR process)
+  Identify -- Suggest new model --> Assess(Assess FAIR criteria and assign a score)
+  Status -- Not yet started --> Create_repo(Create new GitHub issue, request repository)
+  Status -- In process --> Collab(Collaborate on GitHub)
+  Create_repo --> Collab
+  Collab --> FAIR(Make model FAIR!)
+  Learn_GitHub([fab:fa-github Learn more about GitHub]) --- Collab
+  Learn_FAIR([fas:fa-lightbulb Learn more about FAIR principles]) ---- FAIR
+  Assess --> Create_repo
+  FAIR --> Analyze(Do model analysis, replication studies)
+  Analyze --> Paper(Write and publish paper or report)
+
+  click List href "https://tobefair.org/docs/getting-involved/checklist/#one" _blank
+  click Identify href "https://tobefair.org/docs/getting-involved/checklist/#two" _blank
+  click Assess href "https://tobefair.org/docs/process/assessment" _blank
+  click Status href "https://tobefair.org/docs/models/#selecting-a-model-and-getting-started" _blank
+  click Create_repo href "https://tobefair.org/docs/getting-involved/checklist/#four" _blank
+  click Learn_GitHub href "https://comses.net/education/intro-to-git-github/" _blank
+  click Learn_FAIR href "https://comses.net/education/responsible-practices" _blank
+
+  class Learn_GitHub,Learn_FAIR,GitHub_tutorial,GitHub_intro learn
+  class Analyze,Paper optional
+
+
+  classDef node font-weight:bold,stroke-width:3px,stroke:#30638E,color:#403F4C
+  classDef learn font-weight:bold,stroke-width:3px,stroke:orange,color:#403F4C
+  classDef optional stroke-dasharray: 5 5
+  linkStyle default stroke:#403F4C,color:#403F4C
+```
+
+{{% /blocks/section %}}
+
+{{% blocks/section type="section" color="primary" %}}
 
 <center>
 <h3>
