@@ -15,7 +15,7 @@ The initiative aims to provide a platform to learn the skills needed to make mod
 2. [how to do robust model documentation](https://www.comses.net/resources/standards/)
 3. [how to use GitHub](https://comses.net/education/intro-to-git-github/)
 
-__So, are you ready to join the community, improve your skills and knowledge, and contribute to this public good? Check out to the [initiative website](https://tobefair.org), learn the [proposed process](https://tobefair.org/about/), and [find a model](https://tobefair.org/docs/models/) to work on!__
+__So, are you ready to join the community, improve your skills and knowledge, and contribute to this public good? Check out the [initiative website](https://tobefair.org), learn the [proposed process](https://tobefair.org/about/), and [find a model](https://tobefair.org/docs/models/) to work on!__
 <br>
 <br>
 _Many thanks to those who have contributed to the development of the content, website, and GitHub architecture that will make this community initiative possible._
