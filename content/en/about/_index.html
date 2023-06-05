@@ -47,7 +47,7 @@ flowchart TD
   Identify -- Choose from list --> Status(Check model status in making FAIR process)
   Identify -- Suggest new model --> Assess(Assess FAIR criteria and assign a score)
   Status -- Not yet started --> Create_repo(Create new GitHub issue, request repository)
-  Status -- In process --> Collab(Collaborate on GitHub)
+  Status -- In process --> Collab(Collaborate on GitHub, contribute to community discussions)
   Create_repo --> Collab
   Collab --> FAIR(Make model FAIR!)
   Learn_GitHub([fab:fa-github Learn more about GitHub]) --- Collab
@@ -55,14 +55,17 @@ flowchart TD
   Assess --> Create_repo
   FAIR --> Analyze(Do model analysis, replication studies)
   Analyze --> Paper(Write and publish paper or report)
+  Paper --> Credit(Get credit for your hard work!)
 
   click List href "https://tobefair.org/docs/getting-involved/checklist/#one" _blank
   click Identify href "https://tobefair.org/docs/getting-involved/checklist/#two" _blank
   click Assess href "https://tobefair.org/docs/process/assessment" _blank
   click Status href "https://tobefair.org/docs/models/#selecting-a-model-and-getting-started" _blank
   click Create_repo href "https://tobefair.org/docs/getting-involved/checklist/#four" _blank
+  click Collab href "https://github.com/orgs/make-models-fair/discussions" _blank
   click Learn_GitHub href "https://comses.net/education/intro-to-git-github/" _blank
   click Learn_FAIR href "https://comses.net/education/responsible-practices" _blank
+  click Credit href "https://tobefair.org/docs/process/#get-your-fair-share" _blank
 
   class Learn_GitHub,Learn_FAIR,GitHub_tutorial,GitHub_intro learn
   class Analyze,Paper optional
