@@ -5,11 +5,9 @@ on:
     branches:
       - main
   pull_request:
-  schedule:
-    - cron: "0 0 * * *"
+  repository_dispatch:
+    types: [trigger-deploy]
   workflow_dispatch:
-  # repository_dispatch:
-  #   types: [trigger-deploy]
 
 jobs:
   deploy:
@@ -46,7 +44,6 @@ jobs:
           hugo --minify
           
       - name: Deploy
-        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         env:
           HUGO_ENV: "production"
