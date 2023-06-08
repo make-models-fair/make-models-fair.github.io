@@ -22,4 +22,4 @@ To learn more, please visit the [Getting Involved](/docs/getting-involved/) page
 
 
 ### __Navigating the site__
-This website's documentation pages provide information on the [process](/docs/process/) involved in making a model FAIR, the currently-selected papers and their associated [models](/docs/models/), and the steps for [getting involved](/docs/getting-involved/) with this initiative.
+This website's documentation pages provide information on the [process](/docs/process/) involved in making a model FAIR, the currently-selected papers and their associated [models](/docs/models/), and the steps for [getting involved](/docs/getting-involved/) with this initiative. Additionally, be sure check out the [community discussion board](https://github.com/orgs/make-models-fair/discussions) on Github.
