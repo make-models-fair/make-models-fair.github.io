@@ -111,7 +111,7 @@ For the sake of this initiative, &lt;strong>a model would be considered FAIR onc
 &lt;/tr>
 &lt;tr>
 &lt;td>The basic results published in the publication are not replicable.&lt;/td>
-&lt;td>While replication is not required to score the first criterion as &amp;ldquo;Yes&amp;rdquo; according to this initiative&amp;rsquo;s assessment guidance, it does indicate that there may be issues with the code that would inhibit reproducibility. This may be an issue with differences in program or package versions, missing pieces of the code, or bugs in the software.&lt;/td>
+&lt;td>While replication is not required to score the first criterion as &amp;ldquo;Yes&amp;rdquo; according to this initiative&amp;rsquo;s assessment guidance, it does indicate that there may be issues with the code that would inhibit reproducibility. This may be an issue with differences in program or package versions, missing pieces of the code, or other bugs.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -128,7 +128,7 @@ For the sake of this initiative, &lt;strong>a model would be considered FAIR onc
 &lt;tbody>
 &lt;tr>
 &lt;td>The model code has no license.&lt;/td>
-&lt;td>Give it an appropriate community based license. If you received the code from the authors, consult with them on the selection of the license.&lt;/td>
+&lt;td>Give it a license. If you received the code from the authors, consult with them on the selection of the license.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -162,7 +162,7 @@ For the sake of this initiative, &lt;strong>a model would be considered FAIR onc
 &lt;tbody>
 &lt;tr>
 &lt;td>Documentation quality can be improved.&lt;/td>
-&lt;td>Improve the model description. For example, describe the purpose of the model, add visual flow diagrams, equations, and pseudo code, describe submodels. Provide sources of datasets used by the model. In principle the model should be capable of being replicated based on just the model documentation.&lt;/td>
+&lt;td>Improve the model description. For example, describe purpose, use flow diagrams, use equations and pseudo code, describe submodels. Provide sources of datasets used by the model. In principle the model could be replicated from the model documentation.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -179,7 +179,7 @@ For the sake of this initiative, &lt;strong>a model would be considered FAIR onc
 &lt;tbody>
 &lt;tr>
 &lt;td>Code is not sufficiently cleaned up and commented.&lt;/td>
-&lt;td>Clean up the code by removing commented out or unused (&amp;ldquo;dead&amp;rdquo;) code, refactoring the code to provide clear and meaningful variable names, adding comments that describe the intent, purpose, and any assumptions in all methods / functions / procedures / classes.&lt;/td>
+&lt;td>Clean up the code by removing outcommenting code, provide clear variable names, comment on the meaning of each procedure, remove.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
