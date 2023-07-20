@@ -14,7 +14,7 @@
       {{ end }}
     </a>
   {{ else }}
-    {{ $assignees := urlquery "kaclaborn, manuvanegas" | safeURL }}
+    {{ $assignees := urlquery "kaclaborn,manuvanegas,Mohsen-Shahbaznezhadfard" | safeURL }}
     {{ $labels := urlquery "Not yet started, " .domain | safeURL }}
     {{ $template_name := replace .domain " " "-" | lower }}
     {{ $template := urlquery $template_name ".md" | safeURL }}
