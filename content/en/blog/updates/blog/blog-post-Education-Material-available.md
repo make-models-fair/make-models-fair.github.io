@@ -1,5 +1,9 @@
-# Education Material Available
-
++++
+author = "Dr. Marco Janssen"
+title = "Education Material Available"
+linkTitle = "Education Material Available"
+date = "2023-09-12"
++++
 
 We think it is important to introduce students in modeling courses about FAIR principles and we developed a template of a student group project. The project is titled "Making a Model FAIR," and it focuses on enhancing the discoverability, accessibility, and usability of a selected computational model through collaboration and application of FAIR principles.
 
