@@ -17,7 +17,7 @@ Please share your experiences or reflections on the [discussion page](https://gi
 | Problem                | Solution               |
 |------------------------|------------------------|
 | Code is not available in a publicly accessible repository.| Contact the authors and inquire about the availability of the original code of the model.<br><br> _If they provide the code:_ Ask whether it is OK to make the code publicly available. <br><br> _If the code is not findable (or authors do not want to make their code publicly available):_ Try to replicate the code from the model description of the publication (using the GitHub repository associated with this model).|
-| The basic results published in the publication are not replicable.| While replication is not required to score the first criterion as "Yes" according to this initiative's assessment guidance, it does indicate that there may be issues with the code that would inhibit reproducibility. This may be an issue with differences in program or package versions, missing pieces of the code, or other bugs.|
+| The basic results published in the publication are not replicable.| While replication is not required to score the first criterion as "Yes" according to this initiative's assessment guidance, it does indicate that there may be issues with the code that would inhibit reproducibility. This may be an issue with differences in program or package versions, missing pieces of the code, or bugs in the software.|
 
 ----------------
 <br>
@@ -26,7 +26,7 @@ Please share your experiences or reflections on the [discussion page](https://gi
 
 | Problem                | Solution               |
 |------------------------|------------------------|
-| The model code has no license.| Give it a license. If you received the code from the authors, consult with them on the selection of the license.|
+| The model code has no license.| Give it an appropriate community based license. If you received the code from the authors, consult with them on the selection of the license.|
 
 ----------------
 <br>
@@ -44,7 +44,7 @@ Please share your experiences or reflections on the [discussion page](https://gi
 
 | Problem                | Solution               |
 |------------------------|------------------------|
-| Documentation quality can be improved.| Improve the model description. For example, describe purpose, use flow diagrams, use equations and pseudo code, describe submodels. Provide sources of datasets used by the model. In principle the model could be replicated from the model documentation.|
+| Documentation quality can be improved.| Improve the model description. For example, describe the purpose of the model, add visual flow diagrams, equations, and pseudo code, describe submodels. Provide sources of datasets used by the model. In principle the model should be capable of being replicated based on just the model documentation.|
 
 ----------------
 <br>
@@ -53,6 +53,6 @@ Please share your experiences or reflections on the [discussion page](https://gi
 
 | Problem                | Solution               |
 |------------------------|------------------------|
-| Code is not sufficiently cleaned up and commented.| Clean up the code by removing outcommenting code, provide clear variable names, comment on the meaning of each procedure, remove.|
+| Code is not sufficiently cleaned up and commented.| Clean up the code by removing commented out or unused ("dead") code, refactoring the code to provide clear and meaningful variable names, adding comments that describe the intent, purpose, and any assumptions in all methods / functions / procedures / classes.|
 
 ----------------
