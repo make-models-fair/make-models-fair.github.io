@@ -15,7 +15,7 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Read .env hugo version
         id: hugo-version
@@ -24,18 +24,20 @@ jobs:
           echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
 
       - name: Add hugo nodejs dependencies
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           # sync versions with docker-compose .env ala
           # https://github.com/marketplace/actions/hugo-setup#%EF%B8%8F-read-hugo-version-from-file
           hugo-version: "${{ steps.hugo-version.outputs.HUGO_VERSION }}"
           extended: true
-
+      - run: npm ci
       - name: Build Hugo site
         env:
           HUGO_ENV: "production"
@@ -46,7 +48,7 @@ jobs:
           hugo --minify
           
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         env:
           HUGO_ENV: "production"
         if: github.ref == 'refs/heads/main'
