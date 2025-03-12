@@ -20,9 +20,8 @@
 /assets/jsconfig.json
 hugo_stats.json
 
-# Hugo module/dependency files
-go.mod
-go.sum
+# npm
+node_modules/
 
 # temporary lock file while building
 /.hugo_build.lock

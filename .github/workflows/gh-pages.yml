@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -42,9 +41,8 @@ jobs:
         env:
           HUGO_ENV: "production"
         run: |
-          yarn install
-          hugo mod init github.com/make-models-fair/make-models-fair.github.io
-          hugo mod get github.com/google/docsy@v0.6.0
+          npm install
+          hugo mod get
           hugo --minify
           
       - name: Deploy
