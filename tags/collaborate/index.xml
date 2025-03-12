@@ -1,26 +1,2 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Making Models FAIR – collaborate</title><link>/tags/collaborate/</link><description>Recent content in collaborate on Making Models FAIR</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/collaborate/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Getting Involved</title><link>/docs/getting-involved/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/getting-involved/</guid><description>
-&lt;h2 id="__how-to-get-started__">&lt;strong>How to get started&lt;/strong>&lt;/h2>
-&lt;p>Are you ready to contribute to increasing the findability, accessibility, interoperability, and reproducibility (FAIR) of one or more highly cited and well-known models in the social ecological sciences? Below is a checklist detailing the steps to getting started!&lt;/p>
-&lt;ol>
-&lt;li>&lt;a href="/docs/getting-involved/checklist/#one">Check out the models&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/docs/getting-involved/checklist/#two">Identify what you&amp;rsquo;d like to work on&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/docs/getting-involved/checklist/#three">Get set up on GitHub&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/docs/getting-involved/checklist/#four">Create or contribute to a GitHub issue&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/docs/getting-involved/checklist/#five">Update issue labels&lt;/a>&lt;/li>
-&lt;li>&lt;a href="/docs/getting-involved/checklist/#six">Get to work!&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;h5 id="__join-the-community-discussion-on-githubhttpsgithubcomorgsmake-models-fairdiscussions__">&lt;strong>Join the &lt;a href="https://github.com/orgs/make-models-fair/discussions">community discussion on GitHub&lt;/a>!&lt;/strong>&lt;/h5>
-&lt;hr>
-&lt;h2 id="__ways-to-get-involved__">&lt;strong>Ways to get involved&lt;/strong>&lt;/h2>
-&lt;p>This initiative is being built from the ground up, to support capacity-building efforts, foster networking opportunities, and involve the modeling community in the development of a public good.&lt;/p>
-&lt;p>There are many ways that you may wish to join the initiative, such as:&lt;/p>
-&lt;ul>
-&lt;li>Assigning models in courses you teach&lt;/li>
-&lt;li>Designing and implementing replication projects&lt;/li>
-&lt;li>Exploring the robustness of highly cited models through parameter sweeps or other sensitivity tests&lt;/li>
-&lt;li>Assessing the FAIR-ness of your own models&lt;/li>
-&lt;li>Utilizing high throughput computing resources for a selection of highly cited, newly FAIR models&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="__contact__">&lt;strong>Contact&lt;/strong>&lt;/h2>
-&lt;p>Contact us at &lt;a href="mailto:fair@comses.net">fair@comses.net&lt;/a> for more information or ideas!&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Collaborate on Making Models FAIR</title><link>/tags/collaborate/</link><description>Recent content in Collaborate on Making Models FAIR</description><generator>Hugo</generator><language>en</language><atom:link href="/tags/collaborate/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Involved</title><link>/docs/getting-involved/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/getting-involved/</guid><description>How to get started Are you ready to contribute to increasing the findability, accessibility, interoperability, and reproducibility (FAIR) of one or more highly cited and well-known models in the social ecological sciences? Below is a checklist detailing the steps to getting started!
+Check out the models Identify what you&amp;rsquo;d like to work on Get set up on GitHub Create or contribute to a GitHub issue Update issue labels Get to work!</description></item></channel></rss>
