@@ -4,3 +4,10 @@
 .td-page-meta__child { display: none !important; }
 .td-page-meta__issue { display: none !important; }
 .td-page-meta__project-issue { display: none !important; }
+
+.td-cover-block {
+  h1 {
+    font-weight: bold;
+    @extend .display-4;
+  }
+}
