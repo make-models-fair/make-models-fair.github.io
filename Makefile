@@ -1,4 +1,5 @@
 # Settings
+export HUGO_VERSION := $(shell cat HUGO_VERSION)
 MAKEFILES=Makefile $(wildcard *.mk)
 UID=$(shell id -u)
 GID=$(shell id -g)
