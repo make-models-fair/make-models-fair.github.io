@@ -17,11 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Read .env hugo version
+      - name: Read hugo version from file
         id: hugo-version
-        run: |
-          . ./.env
-          echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+        run: echo "HUGO_VERSION=$(cat HUGO_VERSION)" >> $GITHUB_OUTPUT
 
       - name: Add hugo nodejs dependencies
         uses: actions/setup-node@v4
@@ -36,13 +34,13 @@ jobs:
           # https://github.com/marketplace/actions/hugo-setup#%EF%B8%8F-read-hugo-version-from-file
           hugo-version: "${{ steps.hugo-version.outputs.HUGO_VERSION }}"
           extended: true
-      - run: npm ci
+
       - name: Build Hugo site
         env:
           HUGO_ENV: "production"
         run: |
           npm install
-          hugo mod get
+          hugo mod tidy
           hugo --minify
           
       - name: Deploy
