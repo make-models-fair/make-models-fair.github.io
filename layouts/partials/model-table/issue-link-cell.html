@@ -14,7 +14,6 @@
       {{ end }}
     </a>
   {{ else }}
-    {{ $assignees := urlquery "kaclaborn,manuvanegas,Mohsen-Shahbaznezhadfard" | safeURL }}
     {{ $labels := urlquery "Not yet started, " .domain | safeURL }}
     {{ $template_name := replace .domain " " "-" | lower }}
     {{ $template := urlquery $template_name ".md" | safeURL }}
@@ -27,7 +26,7 @@
     }}
     <a
       class="btn btn-dark btn-sm py-0 text-nowrap"
-      href="https://github.com/make-models-fair/coordination/issues/new?assignees={{ $assignees }}&labels={{ $labels }}&template={{ $template }}&title={{ $title }}&body={{ $body }}"
+      href="https://github.com/make-models-fair/coordination/issues/new?labels={{ $labels }}&template={{ $template }}&title={{ $title }}&body={{ $body }}"
       target="_blank"
     >
       <i class="fa-brands fa-github"></i>
