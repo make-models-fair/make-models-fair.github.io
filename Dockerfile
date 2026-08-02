@@ -1,4 +1,4 @@
-ARG HUGO_VERSION=0.139.5
+ARG HUGO_VERSION=0.147.5
 FROM ghcr.io/gohugoio/hugo:v${HUGO_VERSION}
 
 LABEL maintainer="CoMSES Net <support@comses.net>"
