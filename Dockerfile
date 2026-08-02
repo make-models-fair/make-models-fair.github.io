@@ -1,6 +1,5 @@
-ARG HUGO_VERSION=0.133.1
-ARG DIST_TAG=-ext-ubuntu
-FROM floryn90/hugo:${HUGO_VERSION}${DIST_TAG}
+ARG HUGO_VERSION=0.139.5
+FROM ghcr.io/gohugoio/hugo:v${HUGO_VERSION}
 
 LABEL maintainer="CoMSES Net <support@comses.net>"
 

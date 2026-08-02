@@ -2,7 +2,11 @@
 
 {{ $src := .Get "src" }}
 {{ $delimiter := .Get "delimiter" | default "," }}
-{{ $csv := getCSV $delimiter $src }}
+{{ $csvRemote := resources.GetRemote $src }}
+{{ if not $csvRemote }}
+  {{ errorf "model-table: failed to fetch CSV from %s" $src }}
+{{ end }}
+{{ $csv := $csvRemote.Content | transform.Unmarshal (dict "delimiter" $delimiter) }}
 {{ $domain := .Get "domain" }}
 
 <table id="model-table">
