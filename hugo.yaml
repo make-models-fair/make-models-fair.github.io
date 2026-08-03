@@ -99,9 +99,10 @@ outputs:
     - HTML
     - RSS
 module:
+  proxy: direct
   hugoVersion:
     extended: true
-    min: 0.150.1
+    min: 0.164.0
   imports:
-    - path: github.com/google/docsy
+    - path: github.com/google/docsy/theme
       disable: false

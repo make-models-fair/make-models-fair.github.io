@@ -1,8 +1,7 @@
-+++
-title = "Making Models FAIR"
-linkTitle = "Making Models FAIR"
-
-+++
+---
+title: "Making Models FAIR"
+linkTitle: "Making Models FAIR"
+---
 
 {{< blocks/cover title="Welcome to Making Models FAIR!" image_anchor="top" height="full" >}}
 <div class="mx-auto">
@@ -41,31 +40,19 @@ Contact <a href="mailto: fair@comses.net">fair@comses.net for more information!
 
 {{< /blocks/section >}}
 
-{{< blocks/section type="row" color="info">}}
+{{< blocks/section type="row" color="white" >}}
 <center>
-<h3><strong>Contributors</strong></h3>
+<h3><strong>Supporters</strong></h3>
+<p>Organizations that endorse the initiative and contribute to making models FAIR.</p>
 </center>
 
-<div class="card-group justify-content-center">
+<div class="card-group justify-content-center supporter-logos">
 
 <a style=color:inherit
    href="https://comses.net/">
 {{< imgproc comses Fit "200x200" >}}
 {{< /imgproc >}}
 </a>
-
-</div>
-
-{{< /blocks/section >}}
-
-
-{{< blocks/section type="row" color="info">}}
-<center>
-<h3><strong>Supporters</strong></h3>
-<p>Supporting organizations are those who endorse the initiative and stimulate participation.</p>
-</center>
-
-<div class="card-group justify-content-center">
 
 <a style=color:inherit
    href="https://openmodelingfoundation.org">
@@ -78,18 +65,19 @@ Contact <a href="mailto: fair@comses.net">fair@comses.net for more information!
 {{< imgproc rofasss Fit "200x200" >}}
 {{< /imgproc >}}
 </a>
-	
+
 <a style=color:inherit
-   href="https://sesmo.org/">
+   href="https://sesmo.org">
 {{< imgproc SESMO-image Fit "200x200" >}}
 {{< /imgproc >}}
 </a>
 
 <a style=color:inherit
-   href="https://www.jasss.org/">
+   href="https://www.jasss.org">
 {{< imgproc JASSS-image Fit "200x200" >}}
 {{< /imgproc >}}
 </a>
+
 </div>
 
 {{< /blocks/section >}}

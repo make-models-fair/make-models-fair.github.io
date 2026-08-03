@@ -11,3 +11,33 @@
     @extend .display-4;
   }
 }
+
+// Uniform sizing for supporter logos on the homepage.
+// The source images have varying aspect ratios (2.3:1 to 2.9:1 for wide
+// banners, 1.5:1 for SESMO). Fit constrains each to a 200x200 box but the
+// rendered height varies. This gives each logo a fixed-height card with
+// flex centering so the row aligns regardless of aspect ratio.
+.supporter-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 200px;
+    padding: 0.5rem;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

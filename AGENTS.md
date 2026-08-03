@@ -33,6 +33,18 @@ Do not edit derived output directly:
 - `public/`
 - Rendered HTML or copied vendor files
 
+## Running Project Commands
+
+Hugo is not installed on the host. All Hugo, npm, and build commands must run inside the Docker container, not on the host machine. Use the Makefile targets or `docker compose` to interact with the project:
+
+- `make serve` — build and start a hot-reloading dev server at `http://localhost:1313`
+- `make build` — build the Docker image
+- `make shell` — open a shell inside the container (use for `hugo mod graph`, `hugo mod tidy`, `npm install`, etc.)
+- `make stop` — stop and clean up the container
+- `make clean` — remove generated files (`resources/_gen`, etc.)
+
+Never call `hugo`, `npm`, or `go` directly on the host. Always go through `make` targets or `docker compose run --rm hugo <command>`.
+
 ## Invariants
 
 - Preserve scientific intent and existing terminology.
