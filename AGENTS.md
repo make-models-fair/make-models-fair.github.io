@@ -25,7 +25,7 @@ Authoritative:
 - `package.json` / `package-lock.json` — npm build dependencies
 - `HUGO_VERSION` — pinned Hugo version for Docker builds
 - `layouts/`, `static/`, `js/` — overrides and static assets
-- `README.md`, `Makefile`, `Dockerfile`, `docker-compose.yml` — build process
+- `README.md`, `Makefile`, `Dockerfile`, `docker-compose.yml` — build process and container interface
 
 Do not edit derived output directly:
 
@@ -39,6 +39,7 @@ Do not edit derived output directly:
 - Make the smallest change that satisfies the request; do not fix unrelated issues unless asked.
 - Always modify authoritative source files rather than generated output.
 - Match existing formatting, style, and conventions; maintain internal consistency across related documents.
+- Run builds and dependency commands inside the container using `make` targets. Prefer `make` over direct `docker compose` or host-local tooling.
 - Keep local customizations isolated from Docsy upstream; do not vendor or fork Docsy without clear justification.
 - Keep filenames and URLs stable unless required; update links and references when renaming.
 - Record the rationale for non-obvious changes in commit messages or handoff notes.
@@ -46,14 +47,14 @@ Do not edit derived output directly:
 
 ## Dependency Maintenance
 
-Docsy is managed as a Hugo Module. Keep Hugo and Docsy pinned to intentional versions. Any upgrade must verify compatibility with local overrides before completion.
+Docsy is managed as a Hugo Module. Keep Hugo and Docsy pinned to intentional versions. Any upgrade must verify compatibility with local overrides before completion. All module and npm commands must run inside the container.
 
-1. Inspect: `hugo mod graph`
-2. Update deliberately: `hugo mod get -u` or `hugo mod get github.com/google/docsy@vX.Y.Z`
+1. Inspect: from `make shell`, run `hugo mod graph`
+2. Update deliberately: from `make shell`, run `hugo mod get github.com/google/docsy/theme@vX.Y.Z`
 3. Run `hugo mod tidy`
 4. Run `hugo mod verify`
-5. Sync npm dependencies if needed: `hugo mod npm pack` and `npm install`
-6. Build per `README.md`
+5. Sync npm dependencies if needed: from `make shell`, run `hugo mod npm pack` and `npm install`
+6. Build the image with `make build`, then render the site with `make render`
 7. Review overrides, key pages, navigation, search, menus, and shortcodes
 8. Document the change and any manual reconciliation
 
@@ -63,11 +64,11 @@ Site-specific overrides belong in `layouts/`. Prefer targeted local overrides ov
 
 ## Validation
 
-Validate only what could reasonably be affected by the change:
+Validate only what could reasonably be affected by the change. Use `make` targets in preference to direct `docker compose` or host-local tooling:
 
 - Content edits: front matter, relative paths, internal links.
-- Layout/shortcode changes: build and verify affected pages.
-- Dependency/theme changes: build, verify module graph, review key pages, navigation, search, menus, shortcodes, and generated output.
+- Layout/shortcode changes: `make render` and verify affected pages.
+- Dependency/theme changes: `make render`, inspect the module graph from `make shell`, and review key pages, navigation, search, menus, shortcodes, and generated output.
 
 Use the build process documented in `README.md`.
 

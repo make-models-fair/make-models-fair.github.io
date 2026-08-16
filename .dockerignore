@@ -1,0 +1,9 @@
+.agent/
+.git/
+.github/
+.hugo_build.lock
+.hugo_cache/
+data/publications.json
+node_modules/
+public/
+resources/_gen/

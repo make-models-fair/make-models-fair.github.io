@@ -1,18 +1,14 @@
 baseURL: /
 title: Making Models FAIR
-contentDir: content/en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
+enableGitInfo: true
 enableMissingTranslationPlaceholders: true
-staticDir:
-  - static
-  - js
 enableRobotsTXT: true
 taxonomies:
   tag: tags
   category: categories
 params:
-  disableContentEdit: true
   taxonomy:
     taxonomyCloud:
       - tags
@@ -23,16 +19,13 @@ params:
     taxonomyPageHeader:
       - tags
       - categories
-    pygmentsCodeFences: true
-    pygmentsUseClasses: false
-    pygmentsUseClassic: false
-    pygmentsStyle: tango
   mermaid:
     enable: true
     theme: neutral
   ui:
     breadcrumb_disable: false
     footer_about_enable: false
+    navbar_theme: dark
     navbar_logo: true
     navbar_translucent_over_cover_disable: false
     sidebar_menu_compact: false
@@ -66,9 +59,9 @@ params:
   archived_version: false
   version: "0.1"
   url_latest_version: https://tobefair.org
-  github_repo: https://github.com/make-models-fair/tobefair.org
+  github_repo: https://github.com/make-models-fair/make-models-fair.github.io
   github_project_repo: https://github.com/make-models-fair/.github
-  github_branch: master
+  github_branch: main
   # gcs_engine_id: d72aa9b2712488cc3
   offlineSearch: true
   prism_syntax_highlighting: false
@@ -93,6 +86,8 @@ markup:
     renderer:
       unsafe: true
   highlight:
+    codeFences: true
+    noClasses: true
     style: tango
 outputs:
   section:
@@ -101,7 +96,22 @@ outputs:
 module:
   hugoVersion:
     extended: true
-    min: 0.110.0
+    min: 0.165.0
   imports:
-    - path: github.com/google/docsy
-      disable: false
+    - path: github.com/google/docsy/theme
+  mounts:
+    - source: content/en
+      target: content
+    - source: static
+      target: static
+    - source: js
+      target: static
+    - source: assets/bibliographies
+      target: static/bibliographies
+security:
+  allowContent:
+    - ^text/html$
+    - ^text/markdown$
+  funcs:
+    getenv:
+      - ^HUGO_

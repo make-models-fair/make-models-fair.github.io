@@ -4,9 +4,14 @@ services:
     build:
       context: .
       args:
-        HUGO_VERSION: ${HUGO_VERSION}
+        HUGO_VERSION: ${HUGO_VERSION:?Run Docker Compose through make}
     ports:
       - "127.0.0.1:1313:1313"
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /src
+    environment:
+      HOME: /tmp
+      HUGO_CACHEDIR: /tmp/hugo_cache
     volumes:
       - .:/src
       - /src/node_modules

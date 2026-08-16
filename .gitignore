@@ -17,8 +17,10 @@
 # Generated files by hugo
 /public/
 /resources/_gen/
+/data/publications.json
+/.hugo_cache/
 /assets/jsconfig.json
-hugo_stats.json
+/hugo_stats.json
 
 # npm
 node_modules/
@@ -90,4 +92,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/hugo,macos,windows,linux
-
