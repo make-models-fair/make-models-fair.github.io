@@ -2,5 +2,5 @@
 title: News
 menu:
   main:
-    weight: 30
+    weight: 50
 ---

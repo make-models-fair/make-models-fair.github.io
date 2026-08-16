@@ -22,9 +22,9 @@ commands :
 
 ## bibliography-check: verify publications.bib matches the coordination model list.
 bibliography-check : build
-	$(HUGO_RUN_SH) $(HUGO_USER_ENV) $(HUGO_SERVICE) -c 'npm run bibliography:check'
+	$(HUGO_RUN_SH) $(HUGO_USER_ENV) $(HUGO_SERVICE) -c 'npm run models:fetch && npm run bibliography:check'
 
-## build            : build files but do not run a server.
+## build            : build the pinned Hugo/npm toolchain image.
 build : 
 	$(DOCKER_COMPOSE) build --pull $(HUGO_SERVICE)
 
@@ -45,11 +45,11 @@ render : build
 shell : build
 	$(HUGO_RUN_SH) $(HUGO_USER_ENV) -e HUGO_CACHEDIR="$(HUGO_CACHE_CONTAINER_DIR)" $(HUGO_SERVICE)
 
-## stop             : stop the docker server and clean up
+## stop             : stop Compose services and remove their volumes.
 stop :
 	$(DOCKER_COMPOSE) down -v
 
-## clean            : clean up junk files.
+## clean            : remove generated output, caches, and backup files.
 clean :
 	@rm -rf ./public ./resources/_gen ./.hugo_cache ./.hugo_build.lock
 	@find . -name .DS_Store -print -exec rm {} \;

@@ -4,14 +4,14 @@ linkTitle: "Assess a Model"
 weight: 1
 ---
 
-Each model has been initially assessed against the five FAIR criteria based on the information provided in the associated publication (see each model's assessment on the [Models](/docs/models/) page). In the process of making the model FAIR, additional information may need to be brought in beyond what was only provided in the publication. The accompanying GitHub repository for each model publication will serve to keep the score on the improvements of the FAIR components of the published model.
+Each model has been initially assessed against the five FAIR criteria based on the information provided in the associated publication (see each model's assessment on the [Models]({{% relref "/docs/models" %}}) page). In the process of making the model FAIR, additional information may need to be brought in beyond what was only provided in the publication. The accompanying GitHub repository for each model publication will serve to keep the score on the improvements of the FAIR components of the published model.
 
 Each of the five FAIR criteria are outlined below, with their associated "scoring" options.
 For the sake of this initiative, __a model would be considered FAIR once it achieves the bolded option for each criterion.__
 
 ----------------
 
-#### __Criterion 1.__ Available code
+## Criterion 1: Available code
 _Is the model code available in a publicly accessible repository?_
 * __Yes__
 * No
@@ -20,7 +20,7 @@ A link might be provided in a publication; but if the link is not working, we sc
 
 ----------------
 
-#### __Criterion 2.__ License
+## Criterion 2: License
 _Does the model have a license?_
 * __Yes__
 * No
@@ -29,7 +29,7 @@ Typically, license information is provided in the publicly accessible repository
 
 ----------------
 
-#### __Criterion 3.__ DOI
+## Criterion 3: DOI
 _Does the model code repository have a DOI?_
 * __Yes__
 * No
@@ -38,7 +38,7 @@ If the model code is publicly available, does the location have a DOI?
 
 ----------------
 
-#### __Criterion 4.__ Model Documentation
+## Criterion 4: Model documentation
 _Does the model has detailed documentation?_
 
 We provide a letter grade based on a casual reading of the model publication. Whether the model documentation is sufficient to understand the details of the model can only be found out in an actual replication exercise.
@@ -56,7 +56,7 @@ We provide a letter grade based on a casual reading of the model publication. Wh
 
   ----------------
 
-#### __Criterion 5.__ Clean Model Code
+## Criterion 5: Clean model code
 _Is the model code cleaned up and well commented?_
 
 We provide a letter grade based on a causal evaluation of the provided code (if code was provided). This criterion is not able to be graded at all until there is available code.

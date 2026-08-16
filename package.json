@@ -4,10 +4,13 @@
   "license": "CC0-1.0",
   "scripts": {
     "bibliography": "node .github/scripts/bibtex-to-json.mjs",
-    "bibliography:check": "node .github/scripts/check-bibliography-sync.mjs"
+    "bibliography:check": "node .github/scripts/check-bibliography-sync.mjs",
+    "models:fetch": "node .github/scripts/fetch-models.mjs"
   },
   "devDependencies": {
     "@docsy/theme": "0.16.0",
-    "@retorquere/bibtex-parser": "10.0.1"
+    "@retorquere/bibtex-parser": "10.0.1",
+    "lunr": "2.3.9",
+    "mermaid": "11.16.1"
   }
 }

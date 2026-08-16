@@ -1,16 +1,44 @@
-import { readFile } from "node:fs/promises";
+import { readFile, rename, rm, writeFile } from "node:fs/promises";
 
 import { parse } from "@retorquere/bibtex-parser";
 
 const bibliographyPath = "assets/bibliographies/publications.bib";
-const modelsCsvUrl =
-  process.env.MODELS_CSV_URL ??
-  "https://raw.githubusercontent.com/make-models-fair/coordination/main/data/models.csv";
+const modelsCsvPath = "assets/data/models.csv";
+const modelsJsonPath = "data/models.json";
+const expectedHeaders = [
+  "publication_citation",
+  "domain",
+  "available_code",
+  "license",
+  "doi",
+  "documentation",
+  "clean_code",
+  "status",
+  "issue_link",
+  "name_short",
+  "article_doi",
+  "doi_link",
+  "citation_nodoi",
+];
 
 // models.csv currently reuses santos-etal-2006 for two different publications.
 const keyOverrides = new Map([
   ["10.1098/rspb.2005.3272", "santos-rodrigues-pacheco-2006"],
 ]);
+const allowedValues = {
+  domain: new Set(["Cooperation", "Crowd Dynamics", "Ecological Processes", "Land Use"]),
+  available_code: new Set(["N", "Y"]),
+  license: new Set(["N", "Y"]),
+  doi: new Set(["N", "Y"]),
+  documentation: new Set(["", "A", "B", "C", "D", "E"]),
+  clean_code: new Set(["", "A", "B", "C", "D", "E"]),
+  status: new Set([
+    "Not yet started",
+    "Looking for collaborators",
+    "In progress",
+    "Meets FAIR criteria!",
+  ]),
+};
 
 const normalizeDoi = (value) =>
   value
@@ -50,25 +78,32 @@ const parseCsv = (source) => {
     }
   }
 
+  if (quoted) throw new Error(`${modelsCsvPath} contains an unterminated quoted field.`);
+
   if (field || row.length > 0) {
     row.push(field);
     rows.push(row);
   }
 
-  const headers = rows.shift();
-  return rows
-    .filter((values) => values.some(Boolean))
-    .map((values) =>
-      Object.fromEntries(headers.map((header, index) => [header, values[index] ?? ""])),
+  const headers = rows.shift() ?? [];
+  if (headers.length !== expectedHeaders.length ||
+      headers.some((header, index) => header !== expectedHeaders[index])) {
+    throw new Error(
+      `${modelsCsvPath} schema changed. Expected headers:\n${expectedHeaders.join(",")}`,
     );
+  }
+
+  return rows.filter((values) => values.some(Boolean)).map((values, rowIndex) => {
+    if (values.length !== headers.length) {
+      throw new Error(
+        `${modelsCsvPath} row ${rowIndex + 2} has ${values.length} fields; expected ${headers.length}.`,
+      );
+    }
+    return Object.fromEntries(headers.map((header, index) => [header, values[index]]));
+  });
 };
 
-const response = await fetch(modelsCsvUrl);
-if (!response.ok) {
-  throw new Error(`Could not fetch models.csv (${response.status} ${response.statusText})`);
-}
-
-const models = parseCsv(await response.text());
+const models = parseCsv(await readFile(modelsCsvPath, "utf8"));
 const bibliography = parse(await readFile(bibliographyPath, "utf8"));
 if (bibliography.errors.length > 0) {
   throw new Error(
@@ -78,12 +113,28 @@ if (bibliography.errors.length > 0) {
 
 const problems = [];
 const modelsByDoi = new Map();
+const modelKeys = new Set();
 for (const model of models) {
   const doi = normalizeDoi(model.article_doi);
   const expectedKey = keyOverrides.get(doi) ?? model.name_short.trim();
+  if (!model.publication_citation.trim()) {
+    problems.push(`models.csv row has no publication_citation: ${expectedKey || doi}`);
+  }
+  if (!model.domain.trim()) problems.push(`models.csv row has no domain: ${expectedKey || doi}`);
   if (!doi) problems.push(`models.csv row has no article_doi: ${model.name_short}`);
   if (!expectedKey) problems.push(`models.csv row has no name_short: ${doi}`);
+  for (const [field, allowed] of Object.entries(allowedValues)) {
+    if (!allowed.has(model[field])) {
+      problems.push(`models.csv ${expectedKey || doi} has invalid ${field}: ${model[field]}`);
+    }
+  }
+  if (model.issue_link &&
+      !/^https:\/\/github\.com\/make-models-fair\/coordination\/issues\/\d+$/.test(model.issue_link)) {
+    problems.push(`models.csv ${expectedKey || doi} has invalid issue_link: ${model.issue_link}`);
+  }
   if (modelsByDoi.has(doi)) problems.push(`models.csv contains duplicate DOI: ${doi}`);
+  if (modelKeys.has(expectedKey)) problems.push(`models.csv resolves to duplicate key: ${expectedKey}`);
+  modelKeys.add(expectedKey);
   modelsByDoi.set(doi, { expectedKey });
 }
 
@@ -91,6 +142,12 @@ const bibliographyByDoi = new Map();
 const bibliographyKeys = new Set();
 for (const entry of bibliography.entries) {
   const doi = normalizeDoi(entry.fields.doi ?? "");
+  for (const field of ["title", "author", "year", "doi"]) {
+    const value = entry.fields[field];
+    if (!value || (Array.isArray(value) && value.length === 0)) {
+      problems.push(`BibTeX entry ${entry.key} has no ${field}`);
+    }
+  }
   if (!doi) problems.push(`BibTeX entry has no DOI: ${entry.key}`);
   if (bibliographyKeys.has(entry.key)) problems.push(`BibTeX contains duplicate key: ${entry.key}`);
   if (bibliographyByDoi.has(doi)) problems.push(`BibTeX contains duplicate DOI: ${doi}`);
@@ -113,6 +170,14 @@ for (const [doi, entry] of bibliographyByDoi) {
 
 if (problems.length > 0) {
   throw new Error(`Bibliography is out of sync:\n- ${problems.join("\n- ")}`);
+}
+
+const temporaryModelsJsonPath = `${modelsJsonPath}.${process.pid}.tmp`;
+try {
+  await writeFile(temporaryModelsJsonPath, `${JSON.stringify(models, null, 2)}\n`, "utf8");
+  await rename(temporaryModelsJsonPath, modelsJsonPath);
+} finally {
+  await rm(temporaryModelsJsonPath, { force: true });
 }
 
 console.log(

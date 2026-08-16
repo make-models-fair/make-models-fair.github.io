@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions: {}
@@ -27,7 +25,6 @@ jobs:
     permissions:
       contents: read
     env:
-      HUGO_CACHE_HOST_DIR: ./.hugo_cache
       HUGO_CACHE_CONTAINER_DIR: /src/.hugo_cache
     steps:
       - name: Checkout
@@ -38,15 +35,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6
-
-      - name: Cache Hugo resources
-        uses: actions/cache@v5
-        with:
-          path: ${{ env.HUGO_CACHE_HOST_DIR }}
-          key: hugo-${{ runner.os }}-${{ hashFiles('HUGO_VERSION', 'package-lock.json') }}-${{ github.run_id }}
-          restore-keys: |
-            hugo-${{ runner.os }}-${{ hashFiles('HUGO_VERSION', 'package-lock.json') }}-
-            hugo-${{ runner.os }}-
 
       - name: Build in Docker Compose
         env:

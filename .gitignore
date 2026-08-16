@@ -18,6 +18,8 @@
 /public/
 /resources/_gen/
 /data/publications.json
+/data/models.json
+/assets/data/models.csv
 /.hugo_cache/
 /assets/jsconfig.json
 /hugo_stats.json

@@ -1,0 +1,56 @@
+{{- $checklist := site.GetPage "/docs/getting-involved/checklist" -}}
+{{- $assessment := site.GetPage "/docs/process/assessment" -}}
+{{- $models := site.GetPage "/docs/models" -}}
+{{- $process := site.GetPage "/docs/process" -}}
+<div><a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a></div>
+<section class="row td-box td-box--info td-box--height-auto">
+  <div class="col px-0">
+    <div class="container">
+      <h2 class="text-center mb-5">Process for making a model FAIR</h2>
+      <pre class="mermaid">
+flowchart TD
+  List(Check out model publications list) --> Identify(Identify what you would like to work on)
+  Identify -- Choose from list --> Status(Check model status in making FAIR process)
+  Identify -- Suggest new model --> Assess(Assess FAIR criteria and assign a score)
+  Status -- Not yet started --> Create_repo(Create new GitHub issue, request repository)
+  Status -- In process --> Collab(Collaborate on GitHub, contribute to community discussions)
+  Create_repo --> Collab
+  Collab --> FAIR(Make model FAIR!)
+  Learn_GitHub([fab:fa-github Learn more about GitHub]) --- Collab
+  Learn_FAIR([fas:fa-lightbulb Learn more about FAIR principles]) ---- FAIR
+  Assess --> Create_repo
+  FAIR --> Analyze(Do model analysis, replication studies)
+  Analyze --> Paper(Write and publish paper or report)
+  Paper --> Credit(Get credit for your hard work!)
+
+  click List href "{{ $checklist.RelPermalink }}#one"
+  click Identify href "{{ $checklist.RelPermalink }}#two"
+  click Assess href "{{ $assessment.RelPermalink }}"
+  click Status href "{{ $models.RelPermalink }}#selecting-a-model-and-getting-started"
+  click Create_repo href "{{ $checklist.RelPermalink }}#four"
+  click Collab href "https://github.com/orgs/make-models-fair/discussions" _blank
+  click Learn_GitHub href "https://comses.net/education/intro-to-git-github/" _blank
+  click Learn_FAIR href "https://comses.net/education/responsible-practices" _blank
+  click Credit href "{{ $process.RelPermalink }}#get-your-fair-share"
+
+  class Learn_GitHub,Learn_FAIR,GitHub_tutorial,GitHub_intro learn
+  class Analyze,Paper optional
+
+  classDef node font-weight:bold,stroke-width:3px,stroke:#28627c,color:#25343d
+  classDef learn font-weight:bold,stroke-width:3px,stroke:#d8952f,color:#25343d
+  classDef optional stroke-dasharray: 5 5
+  linkStyle default stroke:#25343d,color:#25343d
+      </pre>
+    </div>
+  </div>
+</section>
+{{- $mermaid := resources.Get "js/mermaid.js" | js.Build (dict "minify" true "target" "es2020") | fingerprint -}}
+<script type="module">
+  import { renderMermaid } from "{{ $mermaid.RelPermalink }}";
+  await renderMermaid(".mermaid", "{{ site.Params.mermaid.theme }}");
+  for (const diagram of document.querySelectorAll(".mermaid")) {
+    diagram.tabIndex = 0;
+    diagram.setAttribute("role", "region");
+    diagram.setAttribute("aria-label", "Process diagram; scroll horizontally to view details");
+  }
+</script>

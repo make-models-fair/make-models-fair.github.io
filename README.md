@@ -9,6 +9,8 @@ This GitHub Pages site is generated with [Hugo](https://gohugo.io) using the [Do
 ### Setup
 
 Install Docker with the Compose plugin. The Make targets run Hugo and npm in the pinned container environment used by CI.
+The image contains only the build toolchain and dependencies; Compose mounts the
+working tree at `/src`. It is not a standalone website server image.
 
 Clone this repository via:
 
@@ -41,6 +43,8 @@ The model catalog has two coordinated sources of truth:
 - [`coordination/data/models.csv`](https://github.com/make-models-fair/coordination/blob/main/data/models.csv)
   determines which publications appear in the model category tables and owns
   their category, FAIR status, issue link, DOI, and `name_short` identifier.
+  Builds fetch and verify the immutable source recorded in
+  `model-catalog.lock.json`, not the moving `main` branch.
 - `assets/bibliographies/publications.bib` owns the complete citation metadata
   shown on the [model bibliography](https://tobefair.org/docs/models/publications/).
 
@@ -56,14 +60,18 @@ To add, remove, or change a model publication:
 2. Add, remove, or update the corresponding complete record in
    `assets/bibliographies/publications.bib`. Keep the DOI synchronized and use
    `name_short` as the citation key.
-3. Run `make bibliography-check` to compare every DOI and citation key against
-   the current coordination list.
-4. Run `make render` to validate the BibTeX conversion and rendered site.
+3. Update the commit and SHA-256 checksum in `model-catalog.lock.json`. The
+   scheduled `update-model-catalog-lock.yml` workflow normally proposes this
+   change in a pull request and starts the site validation workflow.
+4. Run `make bibliography-check` to fetch that revision, validate the exact CSV
+   schema, and compare every DOI and citation key.
+5. Run `make render` to validate the BibTeX conversion and rendered site.
 
-Every render and development-server start checks synchronization, converts the
-BibTeX source to ignored Hugo data, and publishes the source bibliography at
-`/bibliographies/publications.bib`. Do not edit `data/publications.json`
-directly.
+Every render and development-server start fetches the pinned CSV once, checks
+synchronization, converts the validated catalog and BibTeX source to ignored
+Hugo data, and publishes the source bibliography at
+`/bibliographies/publications.bib`. Do not edit `assets/data/models.csv`,
+`data/models.json`, or `data/publications.json` directly.
 
 Use `make shell` for an interactive shell in the build container. npm dependency
 maintenance must be performed there so local and CI environments remain consistent.
@@ -74,3 +82,17 @@ GitHub Pages must be configured with **GitHub Actions** as its build and deploym
 source. Pushes to `main` then build and deploy through
 `.github/workflows/gh-pages.yml`.
 Pull requests run the same production render without deploying.
+
+Set `RENDER_BASE_URL` to verify deployment below a URL path, for example:
+
+```bash
+RENDER_BASE_URL=https://example.org/making-models-fair/ make render
+```
+
+## FAIR stewardship
+
+`artifacts/fair/fair-management-plan.md` is the canonical living stewardship
+plan. It inventories the managed research objects, records current metadata and
+provenance controls, identifies unknowns, and defines the RO-Crate 1.3 roadmap
+toward portable model aggregations. Update it when repositories, identifiers,
+metadata standards, preservation plans, or stewardship responsibilities change.

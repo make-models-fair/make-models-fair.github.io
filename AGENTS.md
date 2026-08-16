@@ -22,6 +22,9 @@ Authoritative:
 - `hugo.yaml` — site config, routing, taxonomies, menus, and theme selection
 - `content/en/` — site content
 - `assets/bibliographies/publications.bib` — model publication bibliography
+- `model-catalog.lock.json` — immutable coordination catalog source and checksum used by builds
+- `data/model_domains.yaml` — model-domain labels and reviewed SKOS mappings
+- `artifacts/fair/fair-management-plan.md` — canonical stewardship plan and research object inventory
 - `package.json` / `package-lock.json` — Docsy and npm build dependencies
 - `HUGO_VERSION` — pinned Hugo version for Docker builds
 - `layouts/`, `static/`, `js/` — overrides and static assets
@@ -31,6 +34,9 @@ Do not edit derived output directly:
 
 - `resources/_gen/`
 - `public/`
+- `assets/data/models.csv`
+- `data/models.json`
+- `data/publications.json`
 - Rendered HTML or copied vendor files
 
 ## Invariants
@@ -42,12 +48,18 @@ Do not edit derived output directly:
 - Run builds and dependency commands inside the container using `make` targets. Prefer `make` over direct `docker compose` or host-local tooling.
 - Keep local customizations isolated from Docsy upstream; do not vendor or fork Docsy without clear justification.
 - Keep filenames and URLs stable unless required; update links and references when renaming.
+- Preserve subpath deployment support by using Hugo references and URL functions for internal links.
+- Treat the Docker image as a toolchain: site source is supplied by the Compose mount, not copied into the image.
+- Fetch model data only from the source in `model-catalog.lock.json`, and verify its checksum; never render directly from the coordination repository's moving branch.
 - Record the rationale for non-obvious changes in commit messages or handoff notes.
 - Avoid broad rewrites, opportunistic refactors, speculative edits, and documentation duplication.
 
 ## Dependency Maintenance
 
 Docsy is installed from the npm registry as `@docsy/theme`. Keep Hugo and Docsy pinned to intentional versions. Any upgrade must verify compatibility with local overrides before completion. All npm commands must run inside the container.
+
+The Hugo toolchain is pinned by both `HUGO_VERSION` and the image digest in
+`Dockerfile`; update and verify both together.
 
 1. Inspect: from `make shell`, run `npm outdated @docsy/theme`
 2. Update deliberately: from `make shell`, run `npm install --save-dev --save-exact @docsy/theme@X.Y.Z`
@@ -66,6 +78,8 @@ Validate only what could reasonably be affected by the change. Use `make` target
 - Content edits: front matter, relative paths, internal links.
 - Layout/shortcode changes: `make render` and verify affected pages.
 - Bibliography edits: `make bibliography-check`, then `make render` and verify the model bibliography page.
+- Catalog pin edits: update the bibliography as needed, run `make bibliography-check`, then `make render`.
+- Internal-link changes: render once with a subpath `RENDER_BASE_URL` and inspect affected links.
 - Dependency/theme changes: `make render`, run `npm ls @docsy/theme` from `make shell`, and review key pages, navigation, search, menus, shortcodes, and generated output.
 
 Use the build process documented in `README.md`.

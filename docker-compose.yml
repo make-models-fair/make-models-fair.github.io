@@ -15,7 +15,7 @@ services:
     entrypoint: sh
     command:
       - -c
-      - npm run bibliography:check && npm run bibliography && exec hugo server --bind 0.0.0.0
+      - npm run models:fetch && npm run bibliography:check && npm run bibliography && exec hugo server --bind 0.0.0.0
     volumes:
       - .:/src
       - /src/node_modules

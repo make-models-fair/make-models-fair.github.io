@@ -25,7 +25,6 @@ params:
       - tags
       - categories
   mermaid:
-    enable: true
     theme: neutral
   ui:
     breadcrumb_disable: false
@@ -105,6 +104,8 @@ module:
       target: static
     - source: js
       target: static
+    - source: node_modules/lunr/lunr.min.js
+      target: static/vendor/lunr.min.js
     - source: assets/bibliographies
       target: static/bibliographies
 security:

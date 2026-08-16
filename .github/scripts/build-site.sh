@@ -23,6 +23,7 @@ require_absolute_path() {
 require_absolute_path "$HUGO_CACHEDIR" HUGO_CACHEDIR
 require_absolute_path "$OUTPUT_DIR" OUTPUT_DIR
 
+npm run models:fetch
 npm run bibliography:check
 npm run bibliography
 

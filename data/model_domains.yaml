@@ -1,0 +1,20 @@
+scheme:
+  name: Making Models FAIR model domains
+  description: Broad topical groupings used to organize the initiative's model catalog.
+concepts:
+  land-use:
+    preferredLabel: Land use
+    description: Models concerned with land-use decisions and change.
+    closeMatch: https://www.wikidata.org/entity/Q1165944
+  cooperation:
+    preferredLabel: Cooperation
+    description: Models concerned with cooperative behavior and collective action.
+    closeMatch: https://www.wikidata.org/entity/Q380962
+  ecological-processes:
+    preferredLabel: Ecological processes
+    description: Models concerned with processes and interactions in ecological systems.
+    closeMatch: https://www.wikidata.org/entity/Q111172292
+  crowd-dynamics:
+    preferredLabel: Crowd dynamics
+    description: Models concerned with the movement and behavior of crowds.
+    closeMatch: https://www.wikidata.org/entity/Q465266
