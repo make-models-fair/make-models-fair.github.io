@@ -105,6 +105,8 @@ module:
       target: static
     - source: js
       target: static
+    - source: assets/bibliographies
+      target: static/bibliographies
 security:
   allowContent:
     - ^text/html$

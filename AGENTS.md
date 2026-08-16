@@ -21,6 +21,7 @@ Authoritative:
 
 - `hugo.yaml` — site config, routing, taxonomies, menus, and theme selection
 - `content/en/` — site content
+- `assets/bibliographies/publications.bib` — model publication bibliography
 - `package.json` / `package-lock.json` — Docsy and npm build dependencies
 - `HUGO_VERSION` — pinned Hugo version for Docker builds
 - `layouts/`, `static/`, `js/` — overrides and static assets
@@ -64,6 +65,7 @@ Validate only what could reasonably be affected by the change. Use `make` target
 
 - Content edits: front matter, relative paths, internal links.
 - Layout/shortcode changes: `make render` and verify affected pages.
+- Bibliography edits: `make bibliography-check`, then `make render` and verify the model bibliography page.
 - Dependency/theme changes: `make render`, run `npm ls @docsy/theme` from `make shell`, and review key pages, navigation, search, menus, shortcodes, and generated output.
 
 Use the build process documented in `README.md`.

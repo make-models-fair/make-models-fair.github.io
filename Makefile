@@ -12,13 +12,17 @@ RENDER_BASE_URL ?=
 HUGO_USER_ENV=--user "$(UID):$(GID)" -e HOME=/tmp
 
 # Controls
-.PHONY : all commands build clean stop serve render shell
+.PHONY : all commands bibliography-check build clean stop serve render shell
 .NOTPARALLEL:
 all : commands
 
 ## commands         : show all commands.
 commands :
 	@grep -h -E '^##' ${MAKEFILE_COMMANDS} | sed -e 's/## //g'
+
+## bibliography-check: verify publications.bib matches the coordination model list.
+bibliography-check : build
+	$(HUGO_RUN_SH) $(HUGO_USER_ENV) $(HUGO_SERVICE) -c 'npm run bibliography:check'
 
 ## build            : build files but do not run a server.
 build : 

@@ -2,7 +2,12 @@
   "name": "tbf-site",
   "version": "0.1.0",
   "license": "CC0-1.0",
+  "scripts": {
+    "bibliography": "node .github/scripts/bibtex-to-json.mjs",
+    "bibliography:check": "node .github/scripts/check-bibliography-sync.mjs"
+  },
   "devDependencies": {
-    "@docsy/theme": "0.16.0"
+    "@docsy/theme": "0.16.0",
+    "@retorquere/bibtex-parser": "10.0.1"
   }
 }

@@ -12,6 +12,10 @@ services:
     environment:
       HOME: /tmp
       HUGO_CACHEDIR: /tmp/hugo_cache
+    entrypoint: sh
+    command:
+      - -c
+      - npm run bibliography:check && npm run bibliography && exec hugo server --bind 0.0.0.0
     volumes:
       - .:/src
       - /src/node_modules

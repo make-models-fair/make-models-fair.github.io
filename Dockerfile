@@ -15,6 +15,7 @@ RUN --mount=type=cache,target=/root/.npm \
     npm ci
 
 COPY . .
+RUN npm run bibliography
 
 USER hugo
 

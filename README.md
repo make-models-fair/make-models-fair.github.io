@@ -34,6 +34,37 @@ Use `make stop` to stop the server. Run `make commands` to list all supported ta
 
 The shared production entrypoint is `.github/scripts/build-site.sh`.
 
+#### Bibliography maintenance
+
+The model catalog has two coordinated sources of truth:
+
+- [`coordination/data/models.csv`](https://github.com/make-models-fair/coordination/blob/main/data/models.csv)
+  determines which publications appear in the model category tables and owns
+  their category, FAIR status, issue link, DOI, and `name_short` identifier.
+- `assets/bibliographies/publications.bib` owns the complete citation metadata
+  shown on the [model bibliography](https://tobefair.org/docs/models/publications/).
+
+The normalized DOI connects the two records. A publication must occur exactly
+once in each source, and its BibTeX citation key must match `name_short`. The
+existing `santos-etal-2006` collision is represented by the unique BibTeX key
+`santos-rodrigues-pacheco-2006` and documented in the synchronization checker.
+
+To add, remove, or change a model publication:
+
+1. Update `data/models.csv` in the
+   [coordination repository](https://github.com/make-models-fair/coordination).
+2. Add, remove, or update the corresponding complete record in
+   `assets/bibliographies/publications.bib`. Keep the DOI synchronized and use
+   `name_short` as the citation key.
+3. Run `make bibliography-check` to compare every DOI and citation key against
+   the current coordination list.
+4. Run `make render` to validate the BibTeX conversion and rendered site.
+
+Every render and development-server start checks synchronization, converts the
+BibTeX source to ignored Hugo data, and publishes the source bibliography at
+`/bibliographies/publications.bib`. Do not edit `data/publications.json`
+directly.
+
 Use `make shell` for an interactive shell in the build container. npm dependency
 maintenance must be performed there so local and CI environments remain consistent.
 

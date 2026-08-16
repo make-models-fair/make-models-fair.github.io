@@ -5,7 +5,7 @@ weight: 3
 date: 2022-11-06
 ---
 
-Our goal is to provide training opportunities of practical use of FAIR principles. We have selected and done the preliminary assessment of the FAIR criteria for a list of model publications that might resonate with different groups within the community. The list of initial models is a starting point, and we would like for other members of the community to suggest additional model publications. See below for more details on [how this preliminary list of model publications was selected](/docs/models/#how), and [how to suggest a new model](/docs/models/#new).
+Our goal is to provide training opportunities of practical use of FAIR principles. We have selected and done the preliminary assessment of the FAIR criteria for a list of model publications that might resonate with different groups within the community. The list of initial models is a starting point, and we would like for other members of the community to suggest additional model publications. Browse the complete [model publication bibliography](/docs/models/publications/), see below for more details on [how this preliminary list of model publications was selected](/docs/models/#how), and learn [how to suggest a new model](/docs/models/#new).
 
 If you do not have access to the publication you would like to work on, please send a request for access to fair@comses.net.
 

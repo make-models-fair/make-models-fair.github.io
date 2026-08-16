@@ -11,3 +11,72 @@
     @extend .display-4;
   }
 }
+
+.publications-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  .publication-card {
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba($primary, 0.18);
+    border-left: 4px solid $secondary;
+    border-radius: 0.5rem;
+    background: $white;
+  }
+
+  .publication-title {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+
+  .publication-authors,
+  .publication-links {
+    margin: 0.5rem 0 0;
+  }
+
+  .publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.6rem 0 0;
+
+    span {
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: rgba($secondary, 0.15);
+      font-size: 0.82rem;
+    }
+  }
+
+  .publication-details {
+    margin-top: 0.7rem;
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: minmax(7rem, auto) 1fr;
+      gap: 0.2rem 0.75rem;
+      margin: 0.75rem 0 0;
+    }
+
+    dt,
+    dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .publications-list .publication-details dl {
+    grid-template-columns: 1fr;
+  }
+}
