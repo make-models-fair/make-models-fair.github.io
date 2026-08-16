@@ -8,7 +8,7 @@ This GitHub Pages site is generated with [Hugo](https://gohugo.io) using the [Do
 
 ### Setup
 
-Install Docker with the Compose plugin. The Make targets run Hugo, Go module, npm, and bibliography tooling in the pinned container environment used by CI.
+Install Docker with the Compose plugin. The Make targets run Hugo and npm in the pinned container environment used by CI.
 
 Clone this repository via:
 
@@ -32,14 +32,10 @@ make render
 
 Use `make stop` to stop the server. Run `make commands` to list all supported targets.
 
-The shared production entrypoint is `.github/scripts/build-site.sh`. The dormant
-BibTeX scaffold converts `assets/bibliographies/publications.bib` to the generated
-`data/publications.json` when that source file exists. Run it independently with
-`make publications-json`.
+The shared production entrypoint is `.github/scripts/build-site.sh`.
 
-Use `make shell` for an interactive shell in the build container. Hugo module and
-npm dependency maintenance must be performed there so local and CI environments
-remain consistent.
+Use `make shell` for an interactive shell in the build container. npm dependency
+maintenance must be performed there so local and CI environments remain consistent.
 
 ### Deployment
 

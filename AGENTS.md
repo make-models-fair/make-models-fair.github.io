@@ -19,10 +19,9 @@ When instructions conflict:
 
 Authoritative:
 
-- `hugo.yaml` — site config, routing, taxonomies, menus, module imports
+- `hugo.yaml` — site config, routing, taxonomies, menus, and theme selection
 - `content/en/` — site content
-- `go.mod` / `go.sum` — Hugo module dependencies, including Docsy
-- `package.json` / `package-lock.json` — npm build dependencies
+- `package.json` / `package-lock.json` — Docsy and npm build dependencies
 - `HUGO_VERSION` — pinned Hugo version for Docker builds
 - `layouts/`, `static/`, `js/` — overrides and static assets
 - `README.md`, `Makefile`, `Dockerfile`, `docker-compose.yml` — build process and container interface
@@ -47,20 +46,17 @@ Do not edit derived output directly:
 
 ## Dependency Maintenance
 
-Docsy is managed as a Hugo Module. Keep Hugo and Docsy pinned to intentional versions. Any upgrade must verify compatibility with local overrides before completion. All module and npm commands must run inside the container.
+Docsy is installed from the npm registry as `@docsy/theme`. Keep Hugo and Docsy pinned to intentional versions. Any upgrade must verify compatibility with local overrides before completion. All npm commands must run inside the container.
 
-1. Inspect: from `make shell`, run `hugo mod graph`
-2. Update deliberately: from `make shell`, run `hugo mod get github.com/google/docsy/theme@vX.Y.Z`
-3. Run `hugo mod tidy`
-4. Run `hugo mod verify`
-5. Sync npm dependencies if needed: from `make shell`, run `hugo mod npm pack` and `npm install`
-6. Build the image with `make build`, then render the site with `make render`
-7. Review overrides, key pages, navigation, search, menus, and shortcodes
-8. Document the change and any manual reconciliation
+1. Inspect: from `make shell`, run `npm outdated @docsy/theme`
+2. Update deliberately: from `make shell`, run `npm install --save-dev --save-exact @docsy/theme@X.Y.Z`
+3. Build the image with `make build`, then render the site with `make render`
+4. Review overrides, key pages, navigation, search, menus, and shortcodes
+5. Document the change and any manual reconciliation
 
 ## Layout and Override Discipline
 
-Site-specific overrides belong in `layouts/`. Prefer targeted local overrides over editing the Docsy module cache. Do not copy large theme blocks into the repo. Reconcile overrides after theme updates without rewriting Docsy itself.
+Site-specific overrides belong in `layouts/`. Prefer targeted local overrides over editing `node_modules`. Do not copy large theme blocks into the repo. Reconcile overrides after theme updates without rewriting Docsy itself.
 
 ## Validation
 
@@ -68,7 +64,7 @@ Validate only what could reasonably be affected by the change. Use `make` target
 
 - Content edits: front matter, relative paths, internal links.
 - Layout/shortcode changes: `make render` and verify affected pages.
-- Dependency/theme changes: `make render`, inspect the module graph from `make shell`, and review key pages, navigation, search, menus, shortcodes, and generated output.
+- Dependency/theme changes: `make render`, run `npm ls @docsy/theme` from `make shell`, and review key pages, navigation, search, menus, shortcodes, and generated output.
 
 Use the build process documented in `README.md`.
 
@@ -85,6 +81,6 @@ Use the build process documented in `README.md`.
 If work is incomplete, leave:
 
 - What changed: files, versions, edits
-- What was checked: build status, module graph, pages reviewed
+- What was checked: build status, dependency versions, pages reviewed
 - What remains uncertain: open questions or blockers
 - Recommended next steps

@@ -17,7 +17,6 @@
 # Generated files by hugo
 /public/
 /resources/_gen/
-/data/publications.json
 /.hugo_cache/
 /assets/jsconfig.json
 /hugo_stats.json

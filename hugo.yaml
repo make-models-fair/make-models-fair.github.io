@@ -1,10 +1,15 @@
 baseURL: /
 title: Making Models FAIR
+theme: '@docsy/theme'
+themesDir: node_modules
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 enableGitInfo: true
 enableMissingTranslationPlaceholders: true
 enableRobotsTXT: true
+caches:
+  getresource:
+    maxAge: 1h
 taxonomies:
   tag: tags
   category: categories
@@ -55,10 +60,6 @@ params:
         url: https://github.com/make-models-fair
         icon: fab fa-github
         desc: Development takes place here!
-  version_menu: Releases
-  archived_version: false
-  version: "0.1"
-  url_latest_version: https://tobefair.org
   github_repo: https://github.com/make-models-fair/make-models-fair.github.io
   github_project_repo: https://github.com/make-models-fair/.github
   github_branch: main
@@ -97,8 +98,6 @@ module:
   hugoVersion:
     extended: true
     min: 0.165.0
-  imports:
-    - path: github.com/google/docsy/theme
   mounts:
     - source: content/en
       target: content
@@ -106,8 +105,6 @@ module:
       target: static
     - source: js
       target: static
-    - source: assets/bibliographies
-      target: static/bibliographies
 security:
   allowContent:
     - ^text/html$
