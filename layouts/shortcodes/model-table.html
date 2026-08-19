@@ -1,49 +1,65 @@
-{{/*  Display a table grouped by domain from models.json  */}}
+{{/*  Display a table grouped by domain from models.csv  */}}
 
-{{ $src := .Get "src" }}
-{{ $delimiter := .Get "delimiter" | default "," }}
-{{ $csv := getCSV $delimiter $src }}
 {{ $domain := .Get "domain" }}
+{{ $slug := $domain | urlize }}
+{{ $tableID := printf "model-table-%s" $slug }}
+{{ $filterID := printf "model-filter-%s" $slug }}
+{{ $statusID := printf "model-filter-status-%s" $slug }}
 
-<table id="model-table">
-  {{ partial "model-table/header.html" }}
-  <tbody>
-  {{ range $csv := after 1 $csv }}
-    {{if in (index . 1) $domain }}
-    {{/*  FIXME: should probably be unmarshalled automatically  */}}
-      {{ $citation := index $csv 0 }}
-      {{ $issue_link := index $csv 8 }}
-      {{ $short_name := index $csv 9 }}
-      {{ $status := index $csv 7 }}
-      {{ $available_code := index $csv 2 }}
-      {{ $license := index $csv 3 }}
-      {{ $doi := index $csv 4 }}
-      {{ $docs := index $csv 5 }}
-      {{ $clean_code := index $csv 6 }}
-      <tr>
-        <td><small>{{ index $csv 0 }}</small></td>
-        {{ partial "model-table/issue-link-cell.html"
-           (dict "url" $issue_link "domain" $domain "name" $short_name "citation" $citation "status" $status) }}
-        {{ partial "model-table/binary-badge-cell.html"
-           (dict "data" $available_code "yeslabel" "Has Code" "nolabel" "No Code") }}
-        {{ partial "model-table/binary-badge-cell.html"
-           (dict "data" $license "yeslabel" "Licensed" "nolabel" "No License") }}
-        {{ partial "model-table/binary-badge-cell.html"
-           (dict "data" $doi "yeslabel" "Has DOI" "nolabel" "No DOI") }}
-        {{ partial "model-table/grade-badge-cell.html"
-           (dict "grade" $docs) }}
-        {{ partial "model-table/grade-badge-cell.html"
-           (dict "grade" $clean_code) }}
-      </tr>
-    {{ end }}
-  {{ end }}
-  </tbody>
-</table>
+{{ with hugo.Data.models }}
 
-<script src="/tablefilter.js"></script>
+    <div class="model-table-tools">
+      <div>
+        <label for="{{ $filterID }}">Filter {{ lower $domain }} publications</label>
+        <div class="input-group">
+          <span class="input-group-text" aria-hidden="true"><i class="fas fa-search"></i></span>
+          <input
+            type="search"
+            id="{{ $filterID }}"
+            class="form-control"
+            placeholder="Search citations, status, or assessment"
+            autocomplete="off"
+            data-model-filter
+            data-table-id="{{ $tableID }}"
+            data-status-id="{{ $statusID }}"
+          >
+        </div>
+      </div>
+      <p id="{{ $statusID }}" class="model-table-count" aria-live="polite"></p>
+    </div>
 
-<style>
-  .th-small {
-    font-size: 0.75em;
-  }
-</style>
+    <div
+      class="model-table-scroll"
+      role="region"
+      aria-label="{{ $domain }} model table; scroll horizontally to view all columns"
+      tabindex="0"
+    >
+      <table id="{{ $tableID }}" class="table table-striped">
+        <caption class="visually-hidden">{{ $domain }} model publications and FAIR criterion assessments</caption>
+        {{ partial "model-table/header.html" }}
+        <tbody>
+        {{ range where . "domain" "eq" $domain }}
+            <tr>
+              <td><small>{{ .publication_citation }}</small></td>
+              {{ partial "model-table/issue-link-cell.html"
+                 (dict "url" .issue_link "domain" $domain "name" .name_short "citation" .publication_citation "status" .status) }}
+              {{ partial "model-table/binary-badge-cell.html"
+                 (dict "data" .available_code "yeslabel" "Has Code" "nolabel" "No Code") }}
+              {{ partial "model-table/binary-badge-cell.html"
+                 (dict "data" .license "yeslabel" "Licensed" "nolabel" "No License") }}
+              {{ partial "model-table/binary-badge-cell.html"
+                 (dict "data" .doi "yeslabel" "Has DOI" "nolabel" "No DOI") }}
+              {{ partial "model-table/grade-badge-cell.html"
+                 (dict "grade" .documentation) }}
+              {{ partial "model-table/grade-badge-cell.html"
+                 (dict "grade" .clean_code) }}
+            </tr>
+        {{ end }}
+        </tbody>
+      </table>
+    </div>
+{{ else }}
+  {{ errorf "model-table: data/models.json is unavailable; run npm run bibliography:check" }}
+{{ end }}
+
+<script src="{{ "tablefilter.js" | relURL }}" defer></script>

@@ -8,19 +8,21 @@ menu:
 ---
 
 
-{{< blocks/cover title="About Making Models FAIR" image_anchor="bottom" height="min" >}}
-
+{{< blocks/cover title="About Making Models FAIR" image_anchor="top" height="min" >}}
+<div class="about-hero-content">
+  <p class="lead mt-4">A community-driven effort to build skills, practices, and protocols for transparent and reusable computational models.</p>
+</div>
 {{< /blocks/cover >}}
 
-{{% blocks/lead %}}
-The goal of this initiative is to provide capacity-building opportunities to improve the skill, practices, and protocols to make computational models findable, accessible, interoperable, and reusable (FAIR).
-<br>
-<br>
-We have selected a list of highly cited papers in different domains and developed a protocol for making those models FAIR. Our aim is to make over 100 models FAIR, with the help of the modeling community. We will stimulate activities to advance model analysis of those FAIR models using high throughput computing.
-<br>
-<br>
-<br>
-<h3><strong>Learn more about the initiative and process below!</strong></h3>
+<p class="text-center text-muted small mb-0">Cover image: <a href="https://commons.wikimedia.org/wiki/File:Network_Visualization.png" class="text-muted" target="_blank" rel="noopener">Network Visualization</a> by Martin Grandjean, <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-muted" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+
+{{% blocks/lead color="primary" %}}
+<div class="lead-panel lead-panel--inverse">
+<span class="section-kicker">Our mission</span>
+<h2>Build capacity through shared, practical work.</h2>
+<p>We bring the modeling community together to improve the skills, practices, and protocols needed to make computational models FAIR. The initial catalog of highly cited models gives contributors a concrete place to learn, collaborate, replicate findings, and advance model analysis.</p>
+<p class="lead-panel__action"><a class="btn btn-contrast" href="{{< relref "/docs/process" >}}">Explore the process <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a></p>
+</div>
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" type="row" >}}
@@ -33,64 +35,23 @@ This initiative can be a great way to build your network and meet collaborators,
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fas fa-hands-helping" title="How to get started" %}}
-Learn about <a href="https://comses.net/education/responsible-practices/" class="text-info">the FAIR principles</a>, review the <a href="{{< relref "/docs/Process" >}}" class="text-info">Making Models Fair Process</a>, check out the <a href="{{< relref "/docs/Models" >}}" class="text-info">Models list</a>, and <a href="mailto:fair@comses.net" class="text-info">contact us</a> with any questions. Learn more about the steps to get involved on the <a href="{{< relref "/docs/Getting Involved" >}}" class="text-info">Getting Involved page</a>.
+Learn about <a href="https://comses.net/education/responsible-practices/" class="text-info">the FAIR principles</a>, review the <a href="{{< relref "/docs/process" >}}" class="text-info">Making Models Fair Process</a>, check out the <a href="{{< relref "/docs/models" >}}" class="text-info">Models list</a>, and <a href="mailto:fair@comses.net" class="text-info">contact us</a> with any questions. Learn more about the steps to get involved on the <a href="{{< relref "/docs/getting-involved" >}}" class="text-info">Getting Involved page</a>.
 {{% /blocks/feature %}}
 
 
 {{< /blocks/section >}}
 
-{{% markdown-section color="info" type="container" title="Process for making a model FAIR"%}}
-
-```mermaid
-flowchart TD
-  List(Check out model publications list) --> Identify(Identify what you would like to work on)
-  Identify -- Choose from list --> Status(Check model status in making FAIR process)
-  Identify -- Suggest new model --> Assess(Assess FAIR criteria and assign a score)
-  Status -- Not yet started --> Create_repo(Create new GitHub issue, request repository)
-  Status -- In process --> Collab(Collaborate on GitHub, contribute to community discussions)
-  Create_repo --> Collab
-  Collab --> FAIR(Make model FAIR!)
-  Learn_GitHub([fab:fa-github Learn more about GitHub]) --- Collab
-  Learn_FAIR([fas:fa-lightbulb Learn more about FAIR principles]) ---- FAIR
-  Assess --> Create_repo
-  FAIR --> Analyze(Do model analysis, replication studies)
-  Analyze --> Paper(Write and publish paper or report)
-  Paper --> Credit(Get credit for your hard work!)
-
-  click List href "https://tobefair.org/docs/getting-involved/checklist/#one" _blank
-  click Identify href "https://tobefair.org/docs/getting-involved/checklist/#two" _blank
-  click Assess href "https://tobefair.org/docs/process/assessment" _blank
-  click Status href "https://tobefair.org/docs/models/#selecting-a-model-and-getting-started" _blank
-  click Create_repo href "https://tobefair.org/docs/getting-involved/checklist/#four" _blank
-  click Collab href "https://github.com/orgs/make-models-fair/discussions" _blank
-  click Learn_GitHub href "https://comses.net/education/intro-to-git-github/" _blank
-  click Learn_FAIR href "https://comses.net/education/responsible-practices" _blank
-  click Credit href "https://tobefair.org/docs/process/#__get-your-fair-share__" _blank
-
-  class Learn_GitHub,Learn_FAIR,GitHub_tutorial,GitHub_intro learn
-  class Analyze,Paper optional
-
-
-  classDef node font-weight:bold,stroke-width:3px,stroke:#30638E,color:#403F4C
-  classDef learn font-weight:bold,stroke-width:3px,stroke:orange,color:#403F4C
-  classDef optional stroke-dasharray: 5 5
-  linkStyle default stroke:#403F4C,color:#403F4C
-```
-
-{{% /markdown-section %}}
+{{< model-process >}}
 
 {{% blocks/section type="section" color="primary" %}}
 
-<center>
-<h3>
-<strong>New to Git and GitHub?</strong>
-<br>
-</h3>
+<div class="section-heading">
+<h2>New to Git and GitHub?</h2>
 	<p>
 		Please refer to this <a href="https://comses.net/education/intro-to-git-github/" class="text-info"><strong>step-by-step tutorial</strong></a> to get started with GitHub,
 		and read this <a href="https://docs.github.com/en/get-started/quickstart/hello-world" class="text-info"><strong>introduction from GitHub Docs</strong></a> to dig a bit deeper.
 	</p>
-	</center>
+</div>
 
 
 {{% /blocks/section %}}

@@ -1,0 +1,63 @@
+{{- $publications := hugo.Data.publications -}}
+
+{{- if not $publications -}}
+  <div class="alert alert-warning" role="alert">
+    <strong>Bibliography unavailable.</strong>
+    The generated publication data could not be loaded.
+  </div>
+{{- else -}}
+  <ul class="publications-list">
+    {{- range $publications }}
+      {{- $title := or .fieldMap.title .key -}}
+      {{- $doi := .fieldMap.doi -}}
+      {{- $url := .fieldMap.url -}}
+      <li class="publication-item">
+        <article class="publication-card">
+          <h2 class="publication-title">{{ $title }}</h2>
+          {{- with .authorList }}
+            {{- $authors := . -}}
+            {{- if gt (len .) 5 }}{{ $authors = first 5 . | append "et al." }}{{ end -}}
+            <p class="publication-authors">{{ delimit $authors ", " }}</p>
+          {{- end }}
+          <p class="publication-meta">
+            {{- with .fieldMap.year }}<span>{{ . }}</span>{{ end -}}
+            {{- with .fieldMap.journal }}<span>{{ . }}</span>{{ end -}}
+            {{- with .fieldMap.volume }}<span>Vol. {{ . }}</span>{{ end -}}
+            {{- with .fieldMap.pages }}<span>pp. {{ replace . "--" "–" }}</span>{{ end -}}
+          </p>
+          {{- if $doi }}
+            <p class="publication-links">
+              <a href="https://doi.org/{{ $doi }}">DOI: {{ $doi }}</a>
+            </p>
+          {{- else if $url }}
+            <p class="publication-links"><a href="{{ $url }}">Publication URL</a></p>
+          {{- end }}
+          <details class="publication-details">
+            <summary>Full record</summary>
+            <dl>
+              <dt>Citation key</dt>
+              <dd>{{ .key }}</dd>
+              <dt>Entry type</dt>
+              <dd>{{ .type }}</dd>
+              {{- range .fields }}
+                {{- $name := lower .name -}}
+                {{- if not (in (slice "title" "author" "year" "journal" "volume" "pages") $name) }}
+                  <dt>{{ .name }}</dt>
+                  <dd>
+                    {{- if eq $name "doi" -}}
+                      <a href="https://doi.org/{{ .value }}">{{ .value }}</a>
+                    {{- else if eq $name "url" -}}
+                      <a href="{{ .value }}">{{ .value }}</a>
+                    {{- else -}}
+                      {{ .value }}
+                    {{- end -}}
+                  </dd>
+                {{- end }}
+              {{- end }}
+            </dl>
+          </details>
+        </article>
+      </li>
+    {{- end }}
+  </ul>
+{{- end -}}

@@ -1,0 +1,28 @@
+{{- $accessibility := resources.Get "js/accessibility.js" | minify | fingerprint -}}
+<script defer src="{{ $accessibility.RelPermalink }}" integrity="{{ $accessibility.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- with .Params.model_domain -}}
+  {{- $concept := index hugo.Data.model_domains.concepts . -}}
+  {{- if not $concept -}}
+    {{- errorf "Unknown model_domain %q on %s" . $.File.Path -}}
+  {{- end -}}
+  {{- $models := site.GetPage "/docs/models" -}}
+  {{- $term := dict
+    "@type" "DefinedTerm"
+    "@id" (printf "%s#%s" $models.Permalink .)
+    "name" $concept.preferredLabel
+    "description" $concept.description
+    "inDefinedTermSet" (dict "@type" "DefinedTermSet" "name" hugo.Data.model_domains.scheme.name "url" $models.Permalink)
+    "skos:closeMatch" (dict "@id" $concept.closeMatch)
+  -}}
+  {{- $metadata := dict
+    "@context" (dict "@vocab" "https://schema.org/" "skos" "http://www.w3.org/2004/02/skos/core#")
+    "@type" "CollectionPage"
+    "@id" $.Permalink
+    "url" $.Permalink
+    "name" $.Title
+    "description" $.Description
+    "about" $term
+    "isPartOf" (dict "@type" "WebSite" "name" site.Title "url" site.Home.Permalink)
+  -}}
+  <script type="application/ld+json">{{ $metadata | jsonify | safeJS }}</script>
+{{- end -}}

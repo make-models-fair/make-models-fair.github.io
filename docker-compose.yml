@@ -4,9 +4,18 @@ services:
     build:
       context: .
       args:
-        HUGO_VERSION: ${HUGO_VERSION}
+        HUGO_VERSION: ${HUGO_VERSION:?Run Docker Compose through make}
     ports:
       - "127.0.0.1:1313:1313"
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /src
+    environment:
+      HOME: /tmp
+      HUGO_CACHEDIR: /tmp/hugo_cache
+    entrypoint: sh
+    command:
+      - -c
+      - npm run models:fetch && npm run bibliography:check && npm run bibliography && exec hugo server --bind 0.0.0.0 --renderToMemory --noHTTPCache
     volumes:
       - .:/src
       - /src/node_modules

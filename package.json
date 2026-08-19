@@ -2,14 +2,14 @@
   "name": "tbf-site",
   "version": "0.1.0",
   "license": "CC0-1.0",
-  "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.0"
+  "scripts": {
+    "bibliography": "node .github/scripts/bibtex-to-json.mjs",
+    "bibliography:check": "node .github/scripts/check-bibliography-sync.mjs",
+    "models:fetch": "node .github/scripts/fetch-models.mjs"
   },
-  "dependencies": {
-    "bootstrap": "^5.3.7",
-    "jquery": "^3.0",
-    "popper.js": "^1.16.0"
+  "devDependencies": {
+    "@docsy/theme": "0.16.0",
+    "@retorquere/bibtex-parser": "10.0.1",
+    "lunr": "2.3.9"
   }
 }

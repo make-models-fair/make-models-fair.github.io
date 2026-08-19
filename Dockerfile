@@ -1,15 +1,19 @@
-ARG HUGO_VERSION=0.133.1
-ARG DIST_TAG=-ext-ubuntu
-FROM floryn90/hugo:${HUGO_VERSION}${DIST_TAG}
+# syntax=docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+
+ARG HUGO_VERSION
+
+FROM ghcr.io/gohugoio/hugo:${HUGO_VERSION}@sha256:608a19e34f86de36773503adbaab174fc28a6e338dc7904e03c70320b003a153
 
 LABEL maintainer="CoMSES Net <support@comses.net>"
 
+USER root
+
 WORKDIR /src
-COPY . /src/
 
-RUN git config --global --add safe.directory /src
+COPY package.json package-lock.json ./
+RUN --mount=type=cache,target=/root/.npm \
+    npm ci
 
-RUN hugo mod tidy
-RUN npm install
+USER hugo
 
-CMD ["server"]
+CMD ["version"]

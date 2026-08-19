@@ -1,0 +1,94 @@
+name: Propose model catalog lock update
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: update-model-catalog-lock
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Resolve current model catalog revision
+        id: revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          repository="$(jq -r '.repository' model-catalog.lock.json)"
+          source_path="$(jq -r '.path' model-catalog.lock.json)"
+          latest="$(gh api "repos/$repository/commits?sha=main&path=$source_path&per_page=1" --jq '.[0].sha')"
+          current="$(jq -r '.commit' model-catalog.lock.json)"
+          current_sha256="$(jq -r '.sha256' model-catalog.lock.json)"
+          [[ "$latest" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$current" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$current_sha256" =~ ^[0-9a-f]{64}$ ]]
+          latest_sha256="$(curl --fail --location --retry 3 --silent --show-error "https://raw.githubusercontent.com/$repository/$latest/$source_path" | sha256sum | cut -d ' ' -f 1)"
+          [[ "$latest_sha256" =~ ^[0-9a-f]{64}$ ]]
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          echo "latest_sha256=$latest_sha256" >> "$GITHUB_OUTPUT"
+          if [[ "$latest" == "$current" && "$latest_sha256" == "$current_sha256" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open update pull request
+        if: steps.revision.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LATEST: ${{ steps.revision.outputs.latest }}
+          LATEST_SHA256: ${{ steps.revision.outputs.latest_sha256 }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          pr_body="Locks the website catalog to [coordination@$LATEST](https://github.com/make-models-fair/coordination/commit/$LATEST) with SHA-256 \`$LATEST_SHA256\`. If publications were added, removed, or renamed, update \`assets/bibliographies/publications.bib\` in this pull request before merging."
+          existing_branch="$(gh pr list --state open --author app/github-actions --search 'Update model catalog lock in:title' --json headRefName --jq '.[0].headRefName // ""')"
+          if [[ -n "$existing_branch" ]]; then
+            git fetch origin "$existing_branch"
+            git switch -C "$existing_branch" "origin/$existing_branch"
+            jq --arg commit "$LATEST" --arg sha256 "$LATEST_SHA256" '.commit = $commit | .sha256 = $sha256' model-catalog.lock.json > model-catalog.lock.json.tmp
+            mv model-catalog.lock.json.tmp model-catalog.lock.json
+            if git diff --quiet -- model-catalog.lock.json; then
+              echo "The open update pull request already pins $LATEST."
+              exit 0
+            fi
+            git add model-catalog.lock.json
+            git commit -m "Update model catalog lock"
+            git push
+            gh pr edit "$existing_branch" --body "$pr_body"
+            gh workflow run gh-pages.yml --ref "$existing_branch"
+            exit 0
+          fi
+
+          branch="automation/model-catalog-${LATEST:0:12}-${GITHUB_RUN_ID}"
+          jq --arg commit "$LATEST" --arg sha256 "$LATEST_SHA256" '.commit = $commit | .sha256 = $sha256' model-catalog.lock.json > model-catalog.lock.json.tmp
+          mv model-catalog.lock.json.tmp model-catalog.lock.json
+          git switch -c "$branch"
+          git add model-catalog.lock.json
+          git commit -m "Update model catalog lock"
+          git push --set-upstream origin "$branch"
+
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "Update model catalog lock" \
+            --body "$pr_body"
+
+          gh workflow run gh-pages.yml --ref "$branch"

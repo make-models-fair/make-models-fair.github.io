@@ -1,19 +1,30 @@
-//  filter table rows based on input
+const initializeModelFilters = () => {
+  for (const input of document.querySelectorAll("[data-model-filter]")) {
+    const table = document.getElementById(input.dataset.tableId);
+    const status = document.getElementById(input.dataset.statusId);
+    if (!table || !status) continue;
 
-const filterTable = (inputId, tableId) => {
-  const filter = document.getElementById(inputId).value.toUpperCase();
-  const table = document.getElementById(tableId);
-  const rows = table.getElementsByTagName("tr");
+    const rows = [...table.tBodies[0].rows];
+    const update = () => {
+      const query = input.value.trim().toLocaleLowerCase();
+      let visible = 0;
 
-  for (const row of rows) {
-    const cell = row.getElementsByTagName("td")[0];
-    if (cell) {
-      const value = cell.textContent || cell.innerText;
-      if (value.toUpperCase().indexOf(filter) > -1) {
-        row.style.display = "";
-      } else {
-        row.style.display = "none";
+      for (const row of rows) {
+        const matches = row.textContent.toLocaleLowerCase().includes(query);
+        row.hidden = !matches;
+        if (matches) visible += 1;
       }
-    }
+
+      status.textContent = `${visible} of ${rows.length} models shown`;
+    };
+
+    input.addEventListener("input", update);
+    update();
   }
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeModelFilters, { once: true });
+} else {
+  initializeModelFilters();
 }
