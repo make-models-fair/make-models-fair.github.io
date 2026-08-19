@@ -10,7 +10,6 @@
   "devDependencies": {
     "@docsy/theme": "0.16.0",
     "@retorquere/bibtex-parser": "10.0.1",
-    "lunr": "2.3.9",
-    "mermaid": "11.16.1"
+    "lunr": "2.3.9"
   }
 }

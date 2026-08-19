@@ -2,6 +2,8 @@
 {{- $assessment := site.GetPage "/docs/process/assessment" -}}
 {{- $models := site.GetPage "/docs/models" -}}
 {{- $process := site.GetPage "/docs/process" -}}
+{{- $mermaidVersion := .Site.Params.mermaid.version | default "11.16.1" -}}
+{{- $mermaidTheme := .Site.Params.mermaid.theme | default "default" -}}
 <div><a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a></div>
 <section class="row td-box td-box--info td-box--height-auto">
   <div class="col px-0">
@@ -44,13 +46,18 @@ flowchart TD
     </div>
   </div>
 </section>
-{{- $mermaid := resources.Get "js/mermaid.js" | js.Build (dict "minify" true "target" "es2020") | fingerprint -}}
 <script type="module">
-  import { renderMermaid } from "{{ $mermaid.RelPermalink }}";
-  await renderMermaid(".mermaid", "{{ site.Params.mermaid.theme }}");
-  for (const diagram of document.querySelectorAll(".mermaid")) {
-    diagram.tabIndex = 0;
-    diagram.setAttribute("role", "region");
-    diagram.setAttribute("aria-label", "Process diagram; scroll horizontally to view details");
-  }
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@{{ $mermaidVersion }}/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "{{ $mermaidTheme }}",
+    securityLevel: "loose"
+  });
+  window.addEventListener('load', function () {
+    document.querySelectorAll('.mermaid').forEach(function (diagram) {
+      diagram.tabIndex = 0;
+      diagram.setAttribute('role', 'region');
+      diagram.setAttribute('aria-label', 'Process diagram; scroll horizontally to view details');
+    });
+  });
 </script>
