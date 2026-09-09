@@ -8,7 +8,7 @@
     "models:fetch": "node .github/scripts/fetch-models.mjs"
   },
   "devDependencies": {
-    "@docsy/theme": "0.16.0",
+    "@docsy/theme": "0.17.0",
     "@retorquere/bibtex-parser": "10.0.1",
     "lunr": "2.3.9"
   }
