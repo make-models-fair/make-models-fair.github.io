@@ -8,8 +8,15 @@
     "models:fetch": "node .github/scripts/fetch-models.mjs"
   },
   "devDependencies": {
-    "@docsy/theme": "0.16.0",
     "@retorquere/bibtex-parser": "10.0.1",
-    "lunr": "2.3.9"
-  }
+    "lunr": "2.3.9",
+    "sass-embedded": "1.108.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "bootstrap": "5.3.8"
+  },
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }

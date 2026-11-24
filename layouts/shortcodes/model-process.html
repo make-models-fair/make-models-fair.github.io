@@ -2,14 +2,13 @@
 {{- $assessment := site.GetPage "/docs/process/assessment" -}}
 {{- $models := site.GetPage "/docs/models" -}}
 {{- $process := site.GetPage "/docs/process" -}}
-{{- $mermaidVersion := .Site.Params.mermaid.version | default "11.16.1" -}}
-{{- $mermaidTheme := .Site.Params.mermaid.theme | default "default" -}}
+{{- .Page.Store.Set "hasmermaid" true -}}
 <div><a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a></div>
 <section class="row td-box td-box--info td-box--height-auto">
   <div class="col px-0">
     <div class="container">
       <h2 class="text-center mb-5">Process for making a model FAIR</h2>
-      <pre class="mermaid">
+      <pre class="mermaid" tabindex="0" role="region" aria-label="Process diagram; scroll horizontally to view details">
 flowchart TD
   List(Check out model publications list) --> Identify(Identify what you would like to work on)
   Identify -- Choose from list --> Status(Check model status in making FAIR process)
@@ -46,18 +45,3 @@ flowchart TD
     </div>
   </div>
 </section>
-<script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@{{ $mermaidVersion }}/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({
-    startOnLoad: true,
-    theme: "{{ $mermaidTheme }}",
-    securityLevel: "loose"
-  });
-  window.addEventListener('load', function () {
-    document.querySelectorAll('.mermaid').forEach(function (diagram) {
-      diagram.tabIndex = 0;
-      diagram.setAttribute('role', 'region');
-      diagram.setAttribute('aria-label', 'Process diagram; scroll horizontally to view details');
-    });
-  });
-</script>

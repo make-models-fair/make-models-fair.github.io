@@ -25,7 +25,9 @@ Authoritative:
 - `model-catalog.lock.json` — immutable coordination catalog source and checksum used by builds
 - `data/model_domains.yaml` — model-domain labels and reviewed SKOS mappings
 - `artifacts/fair/fair-management-plan.md` — canonical stewardship plan and research object inventory
-- `package.json` / `package-lock.json` — Docsy and npm build dependencies
+- `go.mod` / `go.sum` — pinned Docsy Hugo module
+- `package.json` / `package-lock.json` — frontend and build dependencies
+- `packages/hugoautogen/` — generated Hugo npm workspace and dependency metadata
 - `HUGO_VERSION` — pinned Hugo version for Docker builds
 - `layouts/`, `static/`, `js/` — overrides and static assets
 - `README.md`, `Makefile`, `Dockerfile`, `docker-compose.yml` — build process and container interface
@@ -56,16 +58,11 @@ Do not edit derived output directly:
 
 ## Dependency Maintenance
 
-Docsy is installed from the npm registry as `@docsy/theme`. Keep Hugo and Docsy pinned to intentional versions. Any upgrade must verify compatibility with local overrides before completion. All npm commands must run inside the container.
-
-The Hugo toolchain is pinned by both `HUGO_VERSION` and the image digest in
-`Dockerfile`; update and verify both together.
-
-1. Inspect: from `make shell`, run `npm outdated @docsy/theme`
-2. Update deliberately: from `make shell`, run `npm install --save-dev --save-exact @docsy/theme@X.Y.Z`
-3. Build the image with `make build`, then render the site with `make render`
-4. Review overrides, key pages, navigation, search, menus, and shortcodes
-5. Document the change and any manual reconciliation
+Follow [Hugo and Docsy upgrades](docs/dependency-upgrades.md). Select the latest
+stable compatible toolchain within the requested scope and keep exact pins.
+Docsy uses a Hugo module; npm supplies its frontend assets and Dart Sass.
+Prefer `make deps-docsy`, `make deps-pack` and `make deps-lock` in the documented
+order. All project tooling runs in the container.
 
 ## Layout and Override Discipline
 
@@ -80,7 +77,7 @@ Validate only what could reasonably be affected by the change. Use `make` target
 - Bibliography edits: `make bibliography-check`, then `make render` and verify the model bibliography page.
 - Catalog pin edits: update the bibliography as needed, run `make bibliography-check`, then `make render`.
 - Internal-link changes: render once with a subpath `RENDER_BASE_URL` and inspect affected links.
-- Dependency/theme changes: `make render`, run `npm ls @docsy/theme` from `make shell`, and review key pages, navigation, search, menus, shortcodes, and generated output.
+- Dependency/theme changes: `make toolchain-status`, `make render`, and the upgrade runbook's root/subpath, browser and content checks.
 
 Use the build process documented in `README.md`.
 

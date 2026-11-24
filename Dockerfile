@@ -2,7 +2,7 @@
 
 ARG HUGO_VERSION
 
-FROM ghcr.io/gohugoio/hugo:${HUGO_VERSION}@sha256:608a19e34f86de36773503adbaab174fc28a6e338dc7904e03c70320b003a153
+FROM ghcr.io/gohugoio/hugo:${HUGO_VERSION}@sha256:4cc9f383086c0fba180efcf7132cf2f025969c462fedf5fcd2bf921915416797
 
 LABEL maintainer="CoMSES Net <support@comses.net>"
 
@@ -11,8 +11,16 @@ USER root
 WORKDIR /src
 
 COPY package.json package-lock.json ./
+# npm ci requires Hugo's generated workspace, even when root pins own its assets.
+COPY packages/ ./packages/
 RUN --mount=type=cache,target=/root/.npm \
     npm ci
+
+# Use the embedded Dart Sass implementation required by Docsy, as in OMF.
+# npm can otherwise select the pure-JS fallback's identically named executable.
+RUN chmod +x /src/node_modules/sass-embedded/dist/bin/sass.js && \
+    ln -sf ../sass-embedded/dist/bin/sass.js /src/node_modules/.bin/sass
+ENV PATH="/src/node_modules/.bin:${PATH}"
 
 USER hugo
 

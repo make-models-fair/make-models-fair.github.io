@@ -11,6 +11,7 @@ services:
     working_dir: /src
     environment:
       HOME: /tmp
+      npm_config_cache: /tmp/.npm
       HUGO_CACHEDIR: /tmp/hugo_cache
     entrypoint: sh
     command:
@@ -18,4 +19,6 @@ services:
       - npm run models:fetch && npm run bibliography:check && npm run bibliography && exec hugo server --bind 0.0.0.0 --renderToMemory --noHTTPCache
     volumes:
       - .:/src
+      # Linked worktrees' .git files point outside /src; expose history read-only.
+      - ${SITE_GIT_COMMON_DIR:?Run Docker Compose through make}:${SITE_GIT_COMMON_DIR}:ro
       - /src/node_modules

@@ -35,6 +35,16 @@ make render
 Use `make stop` to stop the server. Run `make commands` to list all supported targets.
 
 The shared production entrypoint is `.github/scripts/build-site.sh`.
+Stop the preview before `make render`, or render in a separate checkout. The
+render target clears shared build output and refuses to run beside this project's
+active preview.
+
+#### Dependency maintenance
+
+Follow [Hugo and Docsy upgrades](docs/dependency-upgrades.md) to update the stable
+toolchain as a compatible set. Docsy is pinned as a Hugo module in `go.mod`;
+its npm assets and Dart Sass remain locked in `package-lock.json`. Use
+`make toolchain-status` to inspect installed versions after `make build`.
 
 #### Bibliography maintenance
 
@@ -73,8 +83,9 @@ Hugo data, and publishes the source bibliography at
 `/bibliographies/publications.bib`. Do not edit `assets/data/models.csv`,
 `data/models.json`, or `data/publications.json` directly.
 
-Use `make shell` for an interactive shell in the build container. npm dependency
-maintenance must be performed there so local and CI environments remain consistent.
+Use `make shell` for an interactive shell in the build container. Prefer the
+documented dependency targets to regenerate modules, npm workspace and locks
+without modifying the image-owned installed dependencies.
 
 ### Deployment
 

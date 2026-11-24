@@ -1,4 +1,4 @@
-{{/* Reconciled with @docsy/theme 0.16.0; Lunr is served from the pinned npm package. */ -}}
+{{/* Reconciled with Docsy 0.18.1; Lunr is served from the pinned npm package. */ -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,6 +32,9 @@
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
+{{ with (partialCached "td/root-page.html" site).OutputFormats.Get "LLMS" -}}
+<link rel="describedby" href="{{ .Permalink | safeURL }}">
+{{ end -}}
 
 {{ $outputFormat := partial "outputformat.html" . -}}
 {{ if and hugo.IsProduction (ne $outputFormat "print") (ne .Site.Language.Name "xx") -}}
@@ -54,10 +57,6 @@
 {{ partial "schema.html" . -}}
 {{ partial "twitter_cards.html" . -}}
 {{ partialCached "head-css.html" . "head-css-cache-key" -}}
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-  crossorigin="anonymous"></script>
 {{ if .Site.Params.offlineSearch -}}
 <script defer src="{{ "vendor/lunr.min.js" | relURL }}"></script>
 {{ end -}}
@@ -66,22 +65,9 @@
 <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}">
 {{ end -}}
 
-{{ template "algolia/head" . -}}
+{{ partial "algolia/head.html" . -}}
 {{ partial "hooks/head-end.html" . -}}
 
 {{ if hugo.IsProduction -}}
   {{ partial "google_analytics.html" . -}}
-{{ end -}}
-
-{{ define "algolia/head" -}}
-{{ if and .Site.Params.search (isset .Site.Params.search "algolia") -}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.8.2"
-  integrity="sha512-l7pkV1dOURFyHCeH8I4fK9lCkQKuqhlsTCqRl3zktifDlB8oTUJ+mJPgYkK9kHpUut8j1iPquTv32t6hvTPv3g=="
-  crossorigin="anonymous">
-{{ end -}}
-
-{{ if ne .Site.Params.algolia_docsearch nil -}}
-{{ warnf `Config 'params.algolia_docsearch' is deprecated: use 'params.search.algolia'
-      For details, see https://www.docsy.dev/docs/content/search/#algolia-docsearch.` -}}
-{{ end -}}
 {{ end -}}
